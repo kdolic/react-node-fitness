@@ -17,10 +17,24 @@ exports.up = function(knex) {
     tbl.integer('reps')
        .notNullable()
        .unsigned()
+    tbl.integer("user_id")
+       .notNullable()
+       .unsigned()
+       .references("id")
+       .inTable("users")
+       .onDelete("CASCADE")
+       .onUpdate("CASCADE")
   })
   .createTable('goals', tbl => {
     tbl.increments();
     tbl.string('goal_name', 100).notNullable();
+    tbl.integer("user_id")
+       .notNullable()
+       .unsigned()
+       .references("id")
+       .inTable("users")
+       .onDelete("CASCADE")
+       .onUpdate("CASCADE")
 })
 };
 
