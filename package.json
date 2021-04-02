@@ -4,7 +4,18 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js",
+    "server": "nodemon server/index.js",
+    "build": "cd client && npm install && npm run build",
+    "migrate": "knex migrate:latest",
+    "rollback": "knex migrate:rollback",
+    "seed": "knex seed:run",
+    "migrateh": "heroku run knex migrate:latest -a react-node-fitness",
+    "rollbackh": "heroku run knex migrate:rollback -a react-node-fitness",
+    "databaseh": "heroku pg:psql -a react-node-fitness",
+    "seedh": "heroku run knex seed:run -a react-node-fitness",
+    "deploy": "git push heroku master"
   },
   "repository": {
     "type": "git",
