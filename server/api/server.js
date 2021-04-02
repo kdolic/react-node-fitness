@@ -8,12 +8,12 @@ server.use(helmet())
 server.use(cors())
 server.use(express.json())
 
-// Handle GET requests to /api route
+// Handle GET requests to / route
 server.get("/", (req, res) => {
-    res.json({ message: "Hello from server!" });
+    res.json({ message: "*** react-node-fitness: API running ***" });
   });
 
-  server.use((err, req, res, next) => {
+  server.use((err, req, res) => {
     return res.status(500).json({ 
       error: "ERROR: Problem with communicating to server",
       message: err.message,
