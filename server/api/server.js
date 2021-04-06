@@ -3,6 +3,7 @@ const helmet = require('helmet');
 const cors = require('cors');
 
 const authRouter = require('./auth/auth-router')
+const exerciseRouter = require('./exercises/exercises-router')
 
 const server = express()
 
@@ -11,6 +12,7 @@ server.use(cors())
 server.use(express.json())
 
 server.use('/api/auth', authRouter)
+server.use('/api/exercises', exerciseRouter)
 
 // Handle GET requests to / route
 server.get("/", (req, res) => {
