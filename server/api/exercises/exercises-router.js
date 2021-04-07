@@ -43,17 +43,14 @@ router.delete('/:id', (req, res, next) => {
     const { id } = req.params
 
     Exercise.removeExercise(id)
-    .then(deletedExercise => {
-        if(deletedExercise) {
-            res.json({ removed: deletedExercise })
-        } else {
-            res.status(404).json({ message: 'Could not find exercise with given ID '})
-        }
-    })
-    .catch(next())
-
-    
+        .then(deletedExercise => {
+            if(deletedExercise) {
+                res.json({ removed: deletedExercise })
+            } else {
+                res.status(404).json({ message: 'Could not find exercise with given ID '})
+            }
+        })
+        .catch(next()) 
 })
-
 
 module.exports = router
