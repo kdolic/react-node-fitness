@@ -10,17 +10,17 @@ const checkUsernameExists = async (req, res, next) => {
     }
   };
 
-const checkUsernameFree = async (req, res, next) => {
-    const checkUsername = await findBy({ username: req.body.username}).first()
+// const checkUsernameFree = async (req, res, next) => {
+//     const checkUsername = await findBy({ username: req.body.username}).first()
 
-    if(checkUsername.length >= 1) {
-        res.status(422).json({ message: "Username exists already" })
-    } else {
-        next()
-    }
-};
+//     if(checkUsername.length >= 1) {
+//         res.status(422).json({ message: "Username exists already" })
+//     } else {
+//         next()
+//     }
+// };
 
 module.exports = {
     checkUsernameExists,
-    checkUsernameFree
+    // checkUsernameFree
 }

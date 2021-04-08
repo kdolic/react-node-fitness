@@ -4,9 +4,9 @@ const Auth = require('./auth-model')
 const bcrypt =  require('bcryptjs')
 const jwt = require('jsonwebtoken')
 const { jwtSecret } = require('../../config/secrets')
-const { checkUsernameExists, checkUsernameFree } = require('../middleware/auth-middleware')
+const { checkUsernameExists} = require('../middleware/auth-middleware')
 
-router.post("/register", checkUsernameFree, (req,res, next) => {
+router.post("/register", (req,res, next) => {
     const credentials = req.body
 
     if(credentials) {
