@@ -1,6 +1,6 @@
 # React-Node-Fitness
 
-## Deployed via Heroku: react-node-fitness.herokuapp.com/
+## Deployed via Heroku: https://react-node-fitness.herokuapp.com/
 
 ### Description: (Coming Soon)
 
@@ -12,8 +12,9 @@
 
 ### Problems faced: (Coming Soon)
 
+-------------------------------------------------------------------
 
-#### Getting Started with Create React App
+### Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
