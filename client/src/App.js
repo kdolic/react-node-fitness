@@ -1,18 +1,33 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import "./App.css"
 import Home from "./components/Home";
 import Login from "./routes/login/Login";
 import Register from "./routes/register/Register";
 
-function App() {
-  const [data, setData] = React.useState(null);
+function url(path) {
+  return process.env.NODE_ENV === 'development'
+    ? `http://localhost:3001${path}`
+    : path
+}
 
-  React.useEffect(() => {
-    fetch("/api")
+function App() {
+  const [data, setData] = useState('');
+
+  useEffect(() => {
+    fetch(url("/api"))
       .then((res) => res.json())
       .then((data) => setData(data.message));
   }, []);
+
+  // const [data, setData] = useState('')
+  // useEffect(() => {
+  //   // https://heroku.com/nice-app
+  //   // http://localhost:5000
+  //   fetch(url('/api'))
+  //     .then(res => res.json())
+  //     .then(goods => setData(goods.data))
+  // }, [])
 
   return (
     <div className="App">
