@@ -15,20 +15,20 @@ function App() {
   }, []);
 
   return (
-    // <div className="App">
-    //   <header className="App-header">
-    //     <h1>Fitness App...</h1>
-    //     <p>{!data ? "Loading..." : data}</p>
-    //   </header>
-    // </div>
+    <div className="App">
+      <header className="App-header">
+        <h1>Fitness App...</h1>
+        <p>{!data ? "Loading..." : data}</p>
+      </header>
+    </div>
 
-    <Router>
-      <Switch>
-        <Route path='/register' component={Register}/>
-        <Route path='/login' component={Login}/>
-        <Route path='/' component={Home} />
-      </Switch>
-    </Router>
+    // <Router>
+    //   <Switch>
+    //     <Route path='/register' component={Register}/>
+    //     <Route path='/login' component={Login}/>
+    //     <Route path='/' component={Home} />
+    //   </Switch>
+    // </Router>
 
     
   );
