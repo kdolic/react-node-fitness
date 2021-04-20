@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import Link from 'react-router-dom'
+import {Link} from 'react-router-dom'
 
 const initialLoginValues = {
     username: '',
@@ -25,15 +25,15 @@ const Login = () => {
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="name">Username:</label>
-                    <input type="text" name="username" id="username" value={login.username} onChange={handleChange} />
+                    <input type="text" name="username" id="username" placeholder="Username..." value={login.username} onChange={handleChange} />
                 </div>
                 <div>
                     <label htmlFor="name">Password:</label>
-                    <input type="text" name="password" id="password" value={login.password} onChange={handleChange} />
+                    <input type="text" name="password" id="password" placeholder="Password..." value={login.password} onChange={handleChange} />
                 </div>
                 <div>
                     <button disabled={isValid}>Log In</button>
-                    <Link to="">Don't have an account? Register</Link>
+                    <Link to="/register">Don't have an account? Register</Link>
                 </div>
             </form>
         </section>

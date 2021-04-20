@@ -1,5 +1,9 @@
-import React from "react";
-import "./App.css";
+import React from "react"
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
+import "./App.css"
+import Home from "./components/Home";
+import Login from "./routes/login/Login";
+import Register from "./routes/register/Register";
 
 function App() {
   const [data, setData] = React.useState(null);
@@ -11,12 +15,22 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Fitness App...</h1>
-        <p>{!data ? "Loading..." : data}</p>
-      </header>
-    </div>
+    // <div className="App">
+    //   <header className="App-header">
+    //     <h1>Fitness App...</h1>
+    //     <p>{!data ? "Loading..." : data}</p>
+    //   </header>
+    // </div>
+
+    <Router>
+      <Switch>
+        <Route path='/register' component={Register}/>
+        <Route path='/login' component={Login}/>
+        <Route path='/' component={Home} />
+      </Switch>
+    </Router>
+
+    
   );
 }
 
