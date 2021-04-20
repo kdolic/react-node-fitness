@@ -8,6 +8,7 @@
     "start": "node server/index.js",
     "server": "nodemon server/index.js",
     "build": "cd client && npm install && npm run build",
+    "heroku-postbuild": "cd client && npm install && npm run build",
     "migrate": "knex migrate:latest",
     "rollback": "knex migrate:rollback",
     "seed": "knex seed:run",
