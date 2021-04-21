@@ -2,9 +2,9 @@ import React from 'react'
 
 const Banner = () => {
     return (
-        <div>
+        <header>
             
-        </div>
+        </header>
     )
 }
 
