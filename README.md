@@ -20,7 +20,7 @@
 <img align="left" alt="Terminal" width="26px" height="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />
 <img align="left" src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="26px" height="30px" />
 <img align="left" src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="xd" width="26px" height="30px" />
-
+<br />
 
 ### Problems faced: (Coming Soon)
 
