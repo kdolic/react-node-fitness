@@ -33,62 +33,77 @@ const Register = () => {
     <section className="container">
       <img className="registerImg" src={register1} alt="registerImg" />
       <form className="registerForm" onSubmit={handleSubmit}>
-        <div className="registerInputs">
-          <div>
-            <input
-              type="text"
-              name="username"
-              id="username"
-              placeholder="Username *"
-              value={register.username}
-              onChange={handleChange}
+        <div className="registerTop">
+          <h1>Name Here</h1>
+          {isValid ? (
+            <img
+              className="lockImg"
+              src="https://img.icons8.com/fluent/48/000000/lock.png"
+              alt="lockLogo"
             />
-          </div>
-          <div>
-            <input
-              type="text"
-              name="password"
-              id="password"
-              placeholder="Password *"
-              value={register.password}
-              onChange={handleChange}
+          ) : (
+            <img
+              className="lockImg"
+              src="https://img.icons8.com/fluent/48/000000/approved-unlock.png"
+              alt="lockLogo"
             />
-          </div>
-          <div>
-            <input
-              type="text"
-              name="first_name"
-              id="last_name"
-              placeholder="First Name *"
-              value={register.first_name}
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <input
-              type="text"
-              name="last_name"
-              id="first_name"
-              placeholder="Last Name *"
-              value={register.last_name}
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email *"
-              value={register.email}
-              onChange={handleChange}
-            />
-          </div>
-          <div>
-            <button disabled={isValid}>Register</button>
-            <br></br>
-            <Link to="/login">Already have an account? Log In</Link>
-          </div>
+          )}
+
+          <h3>Register</h3>
+        </div>
+        <div>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="  Username *"
+            value={register.username}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            name="password"
+            id="password"
+            placeholder="  Password *"
+            value={register.password}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            name="first_name"
+            id="last_name"
+            placeholder="  First Name *"
+            value={register.first_name}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <input
+            type="text"
+            name="last_name"
+            id="first_name"
+            placeholder="  Last Name *"
+            value={register.last_name}
+            onChange={handleChange}
+          />
+        </div>
+        <div>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="  Email *"
+            value={register.email}
+            onChange={handleChange}
+          />
+        </div>
+        <div className="registerButton">
+          <button disabled={isValid}>Register</button>
+          <Link to="/login">Already have an account? Log In</Link>
         </div>
       </form>
     </section>
