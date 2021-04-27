@@ -13,23 +13,24 @@
 }
 .registerTop h1 {
   font-size: 3rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 .registerTop h3 {
-  font-size: 2rem;
-  margin: 1rem 0 2rem 0;
+  font-size: 1.8rem;
+  margin: 1rem 0 2.5rem 0;
 }
 .registerForm {
   display: flex;
   flex-direction: column;
   width: 40%;
   align-items: left;
-  margin-top: 10%;
+  margin-top: 6%;
 }
 input {
   width: 95%;
-  padding: 1.5%;
+  padding: 2% 1.2%;
   margin: 0.8rem 0 0.8rem 0.5rem;
+  font-size: 1rem;
   border-radius: 8px;
   border-color: lightgray;
 }
@@ -43,22 +44,32 @@ input {
 }
 button {
   width: 55%;
-  background-color: cornflowerblue;
+  background-color: lightgreen;
   font-weight: 900;
+  font-size: 1rem;
   text-transform: uppercase;
   padding: 0.4%;
   color: white;
   border-radius: 8px;
   margin-bottom: 0.6rem;
 }
+button:disabled {
+  color: darkgray;
+  background-color: lightgray;
+}
 button:hover {
-  background-color: darkblue;
+  background-color: darkgreen;
+  transition: ease-in 0.2s;
+  cursor: pointer;
   font-weight: 900;
   padding: 0.4%;
   color: white;
   border-radius: 8px;
 }
 .lockImg {
-  height: 45px;
-  width: 45px;
+  height: 40px;
+  width: 40px;
+}
+.link {
+  text-decoration: none;
 }

@@ -102,8 +102,15 @@ const Register = () => {
           />
         </div>
         <div className="registerButton">
-          <button disabled={isValid}>Register</button>
-          <Link to="/login">Already have an account? Log In</Link>
+          {isValid ? (
+            <button disabled={isValid}>Fill All Fields</button>
+          ) : (
+            <button disabled={isValid}>Register</button>
+          )}
+          {/* <button disabled={isValid}>Register</button> */}
+          <Link className="link" to="/login">
+            Already have an account? Log In
+          </Link>
         </div>
       </form>
     </section>
