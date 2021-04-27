@@ -1,3 +1,6 @@
+* {
+  font-family: "Cinzel", serif;
+}
 .container {
   display: flex;
 }
@@ -13,10 +16,12 @@
 }
 .registerTop h1 {
   font-size: 3rem;
+  font-family: "Cinzel", serif;
   margin-bottom: 2.5rem;
 }
 .registerTop h3 {
   font-size: 1.8rem;
+  font-family: "Cinzel", serif;
   margin: 1rem 0 2.5rem 0;
 }
 .registerForm {
@@ -72,4 +77,9 @@ button:hover {
 }
 .link {
   text-decoration: none;
+}
+.error {
+  color: red;
+  font-weight: 900;
+  margin-left: 1vw;
 }

@@ -1,3 +1,9 @@
+/* STRETCH
+ * submit errors
+ * confirm password
+ * success checkmark on each input
+ * different image with every refresh
+ */
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import * as yup from "yup";
@@ -26,6 +32,7 @@ const Register = () => {
 
   const handleChange = (event) => {
     setRegister({ ...register, [event.target.name]: event.target.value });
+    //// finish on submit errors, works on handlechange////
     yup
       .reach(formSchema, event.target.name)
       .validate(event.target.value)
@@ -51,6 +58,13 @@ const Register = () => {
     register.last_name === "" ||
     register.email === "";
 
+  //   const isCorrect =
+  //     register.username === register.username ||
+  //     register.password === register.password ||
+  //     register.first_name === register.first_name ||
+  //     register.last_name === register.last_name ||
+  //     register.email === register.email;
+
   return (
     <section className="container">
       <img className="registerImg" src={register1} alt="registerImg" />
@@ -74,7 +88,7 @@ const Register = () => {
           <h3>Register</h3>
         </div>
         <div>
-          <div>{registerErrors.username}</div>
+          <div className="error">{registerErrors.username}</div>
           <input
             type="text"
             name="username"
@@ -85,7 +99,7 @@ const Register = () => {
           />
         </div>
         <div>
-          <div>{registerErrors.password}</div>
+          <div className="error">{registerErrors.password}</div>
           <input
             type="text"
             name="password"
@@ -95,7 +109,7 @@ const Register = () => {
             onChange={handleChange}
           />
         </div>
-        <div>{registerErrors.first_name}</div>
+        <div className="error">{registerErrors.first_name}</div>
         <div>
           <input
             type="text"
@@ -106,7 +120,7 @@ const Register = () => {
             onChange={handleChange}
           />
         </div>
-        <div>{registerErrors.last_name}</div>
+        <div className="error">{registerErrors.last_name}</div>
         <div>
           <input
             type="text"
@@ -117,7 +131,7 @@ const Register = () => {
             onChange={handleChange}
           />
         </div>
-        <div>{registerErrors.email}</div>
+        <div className="error">{registerErrors.email}</div>
         <div>
           <input
             type="email"
@@ -132,7 +146,9 @@ const Register = () => {
           {isValid ? (
             <button disabled={isValid}>Fill All Fields</button>
           ) : (
-            <button disabled={isValid}>Register</button>
+            <button disabled={isValid} onSubmit={handleSubmit}>
+              Register
+            </button>
           )}
           {/* <button disabled={isValid}>Register</button> */}
           <Link className="link" to="/login">
