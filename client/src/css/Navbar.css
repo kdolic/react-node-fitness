@@ -1,0 +1,26 @@
+.container {
+  border: 1px solid red;
+}
+.links {
+  display: flex;
+  font-weight: 900;
+  font-family: "Cinzel", serif;
+  margin-right: 20vw;
+  padding: 0.15rem;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100vw;
+  border: 1px solid blue;
+}
+.navTitle {
+  margin-left: 10vw;
+  font-weight: 900;
+  font-size: 2rem;
+  width: 100vw;
+  border: 1px solid orange;
+}
+.link {
+  border: 1px solid green;
+  padding: 1%;
+  margin-right: 1.3vw;
+}
