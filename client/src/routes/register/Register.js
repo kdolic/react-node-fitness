@@ -1,5 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import * as yup from "yup";
+import formSchema from "../../validation/formSchema";
 import "./Register.css";
 import register1 from "../../assets/images/register1.jpg";
 
@@ -10,12 +12,32 @@ const initialRegisterValues = {
   last_name: "",
   email: "",
 };
+const initialFormErrors = {
+  username: "",
+  password: "",
+  first_name: "",
+  last_name: "",
+  email: "",
+};
 
 const Register = () => {
   const [register, setRegister] = useState(initialRegisterValues);
+  const [registerErrors, setRegisterErrors] = useState(initialFormErrors);
 
   const handleChange = (event) => {
     setRegister({ ...register, [event.target.name]: event.target.value });
+    yup
+      .reach(formSchema, event.target.name)
+      .validate(event.target.value)
+      .then(() => {
+        setRegisterErrors({ ...registerErrors, [event.target.name]: "" });
+      })
+      .catch((error) => {
+        setRegisterErrors({
+          ...registerErrors,
+          [event.target.name]: error.errors[0],
+        });
+      });
   };
 
   const handleSubmit = (event) => {
@@ -52,6 +74,7 @@ const Register = () => {
           <h3>Register</h3>
         </div>
         <div>
+          <div>{registerErrors.username}</div>
           <input
             type="text"
             name="username"
@@ -62,6 +85,7 @@ const Register = () => {
           />
         </div>
         <div>
+          <div>{registerErrors.password}</div>
           <input
             type="text"
             name="password"
@@ -71,6 +95,7 @@ const Register = () => {
             onChange={handleChange}
           />
         </div>
+        <div>{registerErrors.first_name}</div>
         <div>
           <input
             type="text"
@@ -81,6 +106,7 @@ const Register = () => {
             onChange={handleChange}
           />
         </div>
+        <div>{registerErrors.last_name}</div>
         <div>
           <input
             type="text"
@@ -91,6 +117,7 @@ const Register = () => {
             onChange={handleChange}
           />
         </div>
+        <div>{registerErrors.email}</div>
         <div>
           <input
             type="email"
