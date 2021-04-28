@@ -1,21 +1,28 @@
 import React from "react";
+import {Nav, NavDropdown} from "react-bootstrap";
 import "../css/Navbar.css";
-import { Link } from "react-router-dom";
 
 const Navbar = () => {
+
   return (
-    <nav className="container">
-      <h1 className="navTitle">Name here</h1>
-      <ul className="links">
-        <Link className="link">Home</Link>
-        <Link className="link">Features</Link>
-        <Link className="link">About</Link>
-        <Link className="link">Gallery</Link>
-        <Link className="link">Team</Link>
-        <Link className="link">Support</Link>
-        <Link className="link">Account</Link>
-      </ul>
-    </nav>
+<section className='navContainer'>
+  <Nav className="links">
+    <h1 className='navTitle' href='/'>DevFit</h1>
+    <Nav.Link className="link" href="/">Home</Nav.Link>
+    <Nav.Link className="link" href="#">Features</Nav.Link>
+    <Nav.Link className="link" href="#">About</Nav.Link>
+    <Nav.Link className="link" href="#">Gallery</Nav.Link>
+    <Nav.Link className="link" href="#">Team</Nav.Link>
+    <NavDropdown className="link" title="Account ▼">
+      <NavDropdown.Item className="link" href='/register'>Register</NavDropdown.Item>
+      <br/>
+      <NavDropdown.Item className="link" href='/login'>Login</NavDropdown.Item>
+      <br/>
+      <NavDropdown.Divider />
+      <NavDropdown.Item className="link">Support</NavDropdown.Item>
+    </NavDropdown>
+  </Nav>
+</section>
   );
 };
 

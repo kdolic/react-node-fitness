@@ -70,7 +70,7 @@ const Register = () => {
       <img className="registerImg" src={register1} alt="registerImg" />
       <form className="registerForm" onSubmit={handleSubmit}>
         <div className="registerTop">
-          <h1>Name Here</h1>
+          <h1>DevFit</h1>
           {isValid ? (
             <img
               className="lockImg"
