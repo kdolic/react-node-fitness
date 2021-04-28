@@ -13,7 +13,7 @@ const Navbar = () => {
     <Nav.Link className="link" href="#">About</Nav.Link>
     <Nav.Link className="link" href="#">Gallery</Nav.Link>
     <Nav.Link className="link" href="#">Team</Nav.Link>
-    <NavDropdown className="link" title="Account ▼">
+    <NavDropdown className="link" title={<span className="link">Account ▼</span>}>
       <NavDropdown.Item className="link" href='/register'>Register</NavDropdown.Item>
       <br/>
       <NavDropdown.Item className="link" href='/login'>Login</NavDropdown.Item>

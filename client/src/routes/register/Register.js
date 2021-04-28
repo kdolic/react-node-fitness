@@ -4,7 +4,7 @@
  * success checkmark on each input
  * different image with every refresh
  */
-import React, { useState, useEffect } from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import * as yup from "yup";
 import formSchema from "../../validation/formSchema";
