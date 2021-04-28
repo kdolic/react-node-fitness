@@ -4,7 +4,7 @@
  * success checkmark on each input
  * different image with every refresh
  */
-import React, { useState, useEffect } from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import * as yup from "yup";
 import formSchema from "../../validation/formSchema";
@@ -70,7 +70,7 @@ const Register = () => {
       <img className="registerImg" src={register1} alt="registerImg" />
       <form className="registerForm" onSubmit={handleSubmit}>
         <div className="registerTop">
-          <h1>Name Here</h1>
+          <h1>DevFit</h1>
           {isValid ? (
             <img
               className="lockImg"
