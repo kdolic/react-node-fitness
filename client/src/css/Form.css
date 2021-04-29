@@ -1,59 +1,65 @@
 * {
-  font-family: "Cinzel", serif;
+  font-family: "Palanquin", sans-serif;
 }
 .container {
   display: flex;
+  height: 94.4vh;
 }
-.registerImg {
-  max-height: 100vh;
-  width: 60%;
+.formImg {
+  background-image: url(https://source.unsplash.com/collection/8172461/1200xauto);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 60vw;
 }
-.registerTop {
+.formTop {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.registerTop h1 {
+.formTop h1 {
   font-size: 3rem;
-  font-family: "Cinzel", serif;
+  font-family: "Palanquin", sans-serif;
+  text-transform: uppercase;
   margin-bottom: 2.5rem;
 }
-.registerTop h3 {
+.formTop h3 {
   font-size: 1.8rem;
-  font-family: "Cinzel", serif;
+  font-family: "Palanquin", sans-serif;
+  text-transform: uppercase;
   margin: 1rem 0 2.5rem 0;
 }
-.registerForm {
+.userForm {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 40vw;
   align-items: left;
-  margin-top: 6%;
+  margin-top: 5rem;
 }
 input {
-  width: 95%;
-  padding: 2% 1.2%;
+  width: 36vw;
+  padding: 0.6rem 0.5rem;
   margin: 0.8rem 0 0.8rem 0.5rem;
-  font-size: 1rem;
-  border-radius: 8px;
+  font-size: 1.1rem;
+  border-radius: 6px;
   border-color: lightgray;
 }
-.registerButton {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 98.5%;
+.formButton {
+  width: 38vw;
   margin: 0.5rem 0 0.4rem 0;
 }
+.accountLogin {
+  display: flex;
+  justify-content: space-between;
+}
 button {
-  width: 55%;
+  width: 37.5vw;
   background-color: lightgreen;
   font-weight: 900;
   font-size: 1rem;
   text-transform: uppercase;
-  padding: 0.4%;
+  padding: 0.2rem;
   color: white;
   border-radius: 8px;
   margin-bottom: 0.6rem;
@@ -62,12 +68,12 @@ button:disabled {
   color: darkgray;
   background-color: lightgray;
 }
-button:hover {
+.ready:hover {
   background-color: darkgreen;
   transition: ease-in 0.2s;
   cursor: pointer;
   font-weight: 900;
-  padding: 0.4%;
+  padding: 0.2rem;
   color: white;
   border-radius: 8px;
 }
@@ -75,8 +81,10 @@ button:hover {
   height: 40px;
   width: 40px;
 }
-.link {
+.account {
+  font-family: "Palanquin", sans-serif;
   text-decoration: none;
+  color: #a9a9a9;
 }
 .error {
   color: red;
