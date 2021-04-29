@@ -45,7 +45,7 @@ const Login = () => {
 
     return (
         <section className='container'>
-          <img className="formImg" src={register1} alt="loginImg" />
+          <div className='formImg' />
           <form className="userForm" onSubmit={handleSubmit}>
             <div className="formTop">
               <h1>DevFit</h1>
@@ -95,9 +95,15 @@ const Login = () => {
                     Login
                   </button>
                 )}
+                <div className='accountLogin'>
+                 <Link className="account" to="#">
+                  Forgot Password?
+                </Link>
                 <Link className="account" to="/register">
                   Don't have an account? Register
                 </Link>
+
+                </div>
               </div>
           </form>
       </section>
