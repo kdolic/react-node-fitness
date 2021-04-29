@@ -4,27 +4,27 @@
 .container {
   display: flex;
 }
-.registerImg {
+.formImg {
   max-height: 100vh;
   width: 60%;
 }
-.registerTop {
+.formTop {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.registerTop h1 {
+.formTop h1 {
   font-size: 3rem;
   font-family: "Cinzel", serif;
   margin-bottom: 2.5rem;
 }
-.registerTop h3 {
+.formTop h3 {
   font-size: 1.8rem;
   font-family: "Cinzel", serif;
   margin: 1rem 0 2.5rem 0;
 }
-.registerForm {
+.userForm {
   display: flex;
   flex-direction: column;
   width: 40%;
@@ -39,7 +39,7 @@ input {
   border-radius: 8px;
   border-color: lightgray;
 }
-.registerButton {
+.formButton {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,7 +62,7 @@ button:disabled {
   color: darkgray;
   background-color: lightgray;
 }
-button:hover {
+.ready:hover {
   background-color: darkgreen;
   transition: ease-in 0.2s;
   cursor: pointer;

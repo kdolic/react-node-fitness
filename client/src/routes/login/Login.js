@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import {Link} from 'react-router-dom'
 import * as yup from "yup";
 import formSchema from "../../validation/formSchema";
+import "../../css/Form.css";
 import register1 from "../../assets/images/register1.jpg";
 
 const initialLoginValues = {
@@ -44,63 +45,62 @@ const Login = () => {
 
     return (
         <section className='container'>
-            <img className="loginImg" src={register1} alt="loginImg" />
-            <form className="loginForm" onSubmit={handleSubmit}>
-            <div className="loginTop">
-                <h1>DevFit</h1>
-                {isValid ? (
-            <img
-              className="lockImg"
-              src="https://img.icons8.com/fluent/48/000000/lock.png"
-              alt="lockLogo"
-            />
-          ) : (
-            <img
-              className="lockImg"
-              src="https://img.icons8.com/fluent/48/000000/approved-unlock.png"
-              alt="lockLogo"
-            />
-          )}
+          <img className="formImg" src={register1} alt="loginImg" />
+          <form className="userForm" onSubmit={handleSubmit}>
+            <div className="formTop">
+              <h1>DevFit</h1>
+              {isValid ? (
+                <img
+                  className="lockImg"
+                  src="https://img.icons8.com/fluent/48/000000/lock.png"
+                  alt="lockLogo"
+                />
+              ) : (
+                <img
+                  className="lockImg"
+                  src="https://img.icons8.com/fluent/48/000000/approved-unlock.png"
+                  alt="lockLogo"
+                />
+              )}
 
-          <h3>Login</h3>
-          </div>
+              <h3>Login</h3>
+            </div>
           <div>
-          <div className="error">{loginErrors.username}</div>
-                    <input 
-                      type="text" 
-                      name="username" 
-                      id="username" 
-                      placeholder="Username *" 
-                      value={login.username} 
-                      onChange={handleChange} 
-                    />
-                </div>
-                <div>
+            <div className="error">{loginErrors.username}</div>
+            <input 
+              type="text" 
+              name="username" 
+              id="username" 
+              placeholder="Username *" 
+              value={login.username} 
+              onChange={handleChange} 
+            />
+            </div>
+              <div>
                 <div className="error">{loginErrors.password}</div>
-                    <input 
-                       type="text" 
-                       name="password" 
-                       id="password" 
-                       placeholder="Password *" 
-                       value={login.password} 
-                       onChange={handleChange} 
-                    />
-                </div>
-                <div className="registerButton">
-          {isValid ? (
-            <button disabled={isValid}>Fill All Fields</button>
-          ) : (
-            <button disabled={isValid} onSubmit={handleSubmit}>
-              Login
-            </button>
-          )}
-          {/* <button disabled={isValid}>Register</button> */}
-          <Link className="link" to="/register">
-            Don't have an account? Register
-          </Link>
-        </div>
-            </form>
-        </section>
+                <input 
+                  type="text" 
+                  name="password" 
+                  id="password" 
+                  placeholder="Password *" 
+                  value={login.password} 
+                  onChange={handleChange} 
+                />
+              </div>
+              <div className="formButton">
+                {isValid ? (
+                  <button disabled={isValid}>Fill All Fields</button>
+                ) : (
+                  <button disabled={isValid} className='ready'>
+                    Login
+                  </button>
+                )}
+                <Link className="link" to="/register">
+                  Don't have an account? Register
+                </Link>
+              </div>
+          </form>
+      </section>
     )
 }
 

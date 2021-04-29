@@ -8,7 +8,7 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import * as yup from "yup";
 import formSchema from "../../validation/formSchema";
-import "./Register.css";
+import "../../css/Form.css";
 import register1 from "../../assets/images/register1.jpg";
 
 const initialRegisterValues = {
@@ -67,9 +67,9 @@ const Register = () => {
 
   return (
     <section className="container">
-      <img className="registerImg" src={register1} alt="registerImg" />
-      <form className="registerForm" onSubmit={handleSubmit}>
-        <div className="registerTop">
+      <img className="formImg" src={register1} alt="registerImg" />
+      <form className="userForm" onSubmit={handleSubmit}>
+        <div className="formTop">
           <h1>DevFit</h1>
           {isValid ? (
             <img
@@ -142,15 +142,14 @@ const Register = () => {
             onChange={handleChange}
           />
         </div>
-        <div className="registerButton">
+        <div className="formButton">
           {isValid ? (
             <button disabled={isValid}>Fill All Fields</button>
           ) : (
-            <button disabled={isValid} onSubmit={handleSubmit}>
+            <button disabled={isValid} className='ready'>
               Register
             </button>
           )}
-          {/* <button disabled={isValid}>Register</button> */}
           <Link className="link" to="/login">
             Already have an account? Log In
           </Link>
