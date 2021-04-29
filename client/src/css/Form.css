@@ -1,5 +1,5 @@
 * {
-  font-family: "Cinzel", serif;
+  font-family: "Palanquin", sans-serif;
 }
 .container {
   display: flex;
@@ -16,12 +16,14 @@
 }
 .formTop h1 {
   font-size: 3rem;
-  font-family: "Cinzel", serif;
+  font-family: "Palanquin", sans-serif;
+  text-transform: uppercase;
   margin-bottom: 2.5rem;
 }
 .formTop h3 {
   font-size: 1.8rem;
-  font-family: "Cinzel", serif;
+  font-family: "Palanquin", sans-serif;
+  text-transform: uppercase;
   margin: 1rem 0 2.5rem 0;
 }
 .userForm {
@@ -75,8 +77,10 @@ button:disabled {
   height: 40px;
   width: 40px;
 }
-.link {
+.account {
+  font-family: "Palanquin", sans-serif;
   text-decoration: none;
+  color: #a9a9a9;
 }
 .error {
   color: red;

@@ -150,7 +150,7 @@ const Register = () => {
               Register
             </button>
           )}
-          <Link className="link" to="/login">
+          <Link className="account" to="/login">
             Already have an account? Log In
           </Link>
         </div>
