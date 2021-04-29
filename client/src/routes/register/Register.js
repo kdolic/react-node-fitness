@@ -67,7 +67,7 @@ const Register = () => {
 
   return (
     <section className="container">
-      <img className="formImg" src={register1} alt="registerImg" />
+      <div className='formImg' />
       <form className="userForm" onSubmit={handleSubmit}>
         <div className="formTop">
           <h1>DevFit</h1>

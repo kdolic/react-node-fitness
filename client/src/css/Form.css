@@ -3,13 +3,14 @@
 }
 .container {
   display: flex;
-  height: 92.3vh;
+  height: 94.4vh;
 }
 .formImg {
-  background-image: url(https://source.unsplash.com/collection/8172461/1500xauto);
+  background-image: url(https://source.unsplash.com/collection/8172461/1200xauto);
   background-repeat: no-repeat;
   background-size: cover;
-  width: 60%;
+  background-position: center;
+  width: 60vw;
 }
 .formTop {
   display: flex;
@@ -32,20 +33,20 @@
 .userForm {
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 40vw;
   align-items: left;
-  margin-top: 6%;
+  margin-top: 5rem;
 }
 input {
-  width: 95%;
-  padding: 2% 1.2%;
+  width: 36vw;
+  padding: 0.6rem 0.5rem;
   margin: 0.8rem 0 0.8rem 0.5rem;
-  font-size: 1rem;
-  border-radius: 8px;
+  font-size: 1.1rem;
+  border-radius: 6px;
   border-color: lightgray;
 }
 .formButton {
-  width: 100%;
+  width: 38vw;
   margin: 0.5rem 0 0.4rem 0;
 }
 .accountLogin {
@@ -53,12 +54,12 @@ input {
   justify-content: space-between;
 }
 button {
-  width: 98%;
+  width: 37.5vw;
   background-color: lightgreen;
   font-weight: 900;
   font-size: 1rem;
   text-transform: uppercase;
-  padding: 0.4%;
+  padding: 0.2rem;
   color: white;
   border-radius: 8px;
   margin-bottom: 0.6rem;
@@ -72,7 +73,7 @@ button:disabled {
   transition: ease-in 0.2s;
   cursor: pointer;
   font-weight: 900;
-  padding: 0.4%;
+  padding: 0.2rem;
   color: white;
   border-radius: 8px;
 }
