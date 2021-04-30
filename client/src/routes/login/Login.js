@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom'
 import * as yup from "yup";
 import formSchema from "../../validation/formSchema";
 import "../../css/Form.css";
-import register1 from "../../assets/images/register1.jpg";
 
 const initialLoginValues = {
     username: '',
