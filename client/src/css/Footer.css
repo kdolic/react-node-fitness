@@ -1,6 +1,79 @@
 .footer {
-  background-color: #fff;
+  /* padding-top: 1.5rem; */
+  color: #a9a9a9;
+  font-family: "Palanquin", sans-serif;
+  background-color: #f6f6f6; /* #f6f6f6 */
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 1px solid red; */
+}
+.footer-span {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+.footer-navbar {
+  display: flex;
+  justify-content: center;
+  width: 50vw;
+  padding-bottom: 1.5rem;
+  /* border: 1px solid blue; */
+}
+.footer-nav {
+  color: #a9a9a9;
+  padding: 1.1em;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+  /* border: 1px solid red; */
+}
+.footer-nav:hover {
+  transition: ease-in-out 0.3s;
+  background-color: #ff3b3f;
+  color: #efefef;
+}
+.nav-row {
+  display: flex;
+}
+.nav-items {
+  display: flex;
+  justify-content: center;
+  width: 25vw;
+  /* border: 1px solid green; */
+}
+.inner {
+  display: flex;
+  width: 10vw;
+  flex-direction: column;
+  /* border: 1px solid red; */
+}
+.nav-links {
+  color: #a9a9a9;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid yellow; */
+}
+.bottom {
+  width: 100vw;
+  margin-top: 1.5rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+  /* border: 1px solid hotpink; */
+}
+.social {
+  margin-right: 2.2rem;
+  /* border: 1px solid peru; */
 }
 
 /* Social Icons */

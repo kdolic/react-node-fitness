@@ -1,54 +1,66 @@
 import React from "react";
+import {Nav} from "react-bootstrap";
 import "../css/Footer.css";
 
 const Footer = () => {
     return (
         <footer className='footer'>
-            <div className='left'>
-                <ul>
-                    <li>Solutions</li>
-                    <li>Marketing</li>
-                    <li>Analytics</li>
-                    <li>Commerce</li>
-                    <li>Insights</li>
-                </ul>
-                <br/>
-                <ul>
-                    <li>Members</li>
-                    <li>The Dev.Fit App</li>
-                    <li>Store</li>
-                    <li>FAQS</li>
-                </ul>
-                <br/>
+            <Nav className='footer-navbar'>
+                    <Nav.Link className='footer-nav' href="/">Home</Nav.Link>
+                    <Nav.Link className='footer-nav' href="#">Features</Nav.Link>
+                    <Nav.Link className='footer-nav' href="#">About</Nav.Link>
+                    <Nav.Link className='footer-nav' href="#">Gallery</Nav.Link>
+                    <Nav.Link className='footer-nav' href="#">Team</Nav.Link>
+                {/* <hr/> */}
+            </Nav>
+            <div className='nav-row'>
+            <Nav className='nav-items'> 
+            <div className='inner'>
+                <Nav.Link className='nav-links' href='#'><span className='footer-span'>Support</span></Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Pricing</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Guides</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Training</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Customer Service</Nav.Link>
             </div>
+                <br/>
+            <div className='inner'>
+                <Nav.Link className='nav-links' href='#'><span className='footer-span'>Members</span></Nav.Link>
+                <Nav.Link className='nav-links' href='#'>The DEV.FIT App</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Store</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>FAQS</Nav.Link>
+            </div>
+                <br/>
+            </Nav>
             <div className='middle'>
-
+                <h1>LOGO</h1>
+                <p>Develop Yourself, Develop Your Fit</p>
             </div>
-            <div className='right'>
-                <ul>
-                    <li>Legal</li>
-                    <li>Claim</li>
-                    <li>Privacy</li>
-                    <li>Terms</li>
-                </ul>
+            <Nav className='nav-items'>
+            <div className='inner'>
+                <Nav.Link className='nav-links' href='#'><span className='footer-span'>Legal</span></Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Claim</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Privacy</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Terms</Nav.Link>
+            </div>
                 <br/>
-                <ul>
-                    <li>Support</li>
-                    <li>Pricing</li>
-                    <li>Guides</li>
-                    <li>Training</li>
-                    <li>Customer Service</li>
-                </ul>
+            <div className='inner'>
+                <Nav.Link className='nav-links' href='#'><span className='footer-span'>Solutions</span></Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Marketing</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Analytics</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Commerce</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Insights</Nav.Link>
+            </div>
+            </Nav>
             </div>
             <div className='bottom'>
-                <hr/>
-                <p>© DEV.FIT, Inc. All rights reserved.</p>
+                {/* <hr/> */}
+                <p>© 2021 DEV.FIT, Inc. All rights reserved.</p>
                 <div className='social'>
-                    <div class="icons8-facebook"></div>
-                    <div class="icons8-twitter"></div>
-                    <div class="icons8-instagram"></div>
-                    <div class="icons8-play-button"></div>
-                    <div class="icons8-tiktok"></div>
+                    <div className="icons8-facebook"></div>
+                    <div className="icons8-twitter"></div>
+                    <div className="icons8-instagram"></div>
+                    <div className="icons8-play-button"></div>
+                    <div className="icons8-tiktok"></div>
                 </div>
             </div>
         </footer>
