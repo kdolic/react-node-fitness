@@ -1,1 +1,30 @@
-
+.bannerContainer {
+  display: flex;
+  justify-content: center;
+  border: 1px solid blue;
+}
+.first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 90vw;
+  height: 90vh;
+  border: 1px solid red;
+}
+.second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 90vw;
+  height: 90vh;
+}
+.third {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 90vw;
+  height: 100vh;
+}

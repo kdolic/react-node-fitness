@@ -75,6 +75,9 @@
   margin-right: 2.2rem;
   /* border: 1px solid peru; */
 }
+hr {
+  width: 80vw;
+}
 
 /* Social Icons */
 .icons8-facebook {

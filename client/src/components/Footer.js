@@ -11,7 +11,6 @@ const Footer = () => {
                     <Nav.Link className='footer-nav' href="#">About</Nav.Link>
                     <Nav.Link className='footer-nav' href="#">Gallery</Nav.Link>
                     <Nav.Link className='footer-nav' href="#">Team</Nav.Link>
-                {/* <hr/> */}
             </Nav>
             <div className='nav-row'>
             <Nav className='nav-items'> 
@@ -53,7 +52,6 @@ const Footer = () => {
             </Nav>
             </div>
             <div className='bottom'>
-                {/* <hr/> */}
                 <p>© 2021 DEV.FIT, Inc. All rights reserved.</p>
                 <div className='social'>
                     <div className="icons8-facebook"></div>
