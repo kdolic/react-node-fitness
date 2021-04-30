@@ -1,6 +1,55 @@
 .footer {
+  color: #a9a9a9;
+  font-family: "Palanquin", sans-serif;
   background-color: #fff;
   display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid red;
+}
+.footer-navbar {
+  border: 1px solid blue;
+}
+.footer-nav {
+  color: #a9a9a9;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 900;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  width: 25vw;
+  border: 1px solid green;
+}
+.support {
+  color: #a9a9a9;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.members {
+  display: flex;
+  color: #a9a9a9;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.middle {
+  border: 1px solid yellow;
+}
+.right {
+  border: 1px solid black;
+}
+.bottom {
+  border: 1px solid hotpink;
+}
+.social {
+  border: 1px solid peru;
 }
 
 /* Social Icons */
