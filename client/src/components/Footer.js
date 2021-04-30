@@ -12,19 +12,24 @@ const Footer = () => {
                     <Nav.Link className='footer-nav' href="#">Gallery</Nav.Link>
                     <Nav.Link className='footer-nav' href="#">Team</Nav.Link>
                 
-                {/* <hr/> */}
+                <hr/>
             </Nav>
+            <div className='nav-row'>
             <Nav className='left'> 
-                <Nav.Link className='support' href='#'>SUPPORT</Nav.Link>
+            <div className='outer'>
+                <Nav.Link className='support' href='#'><span className='footer-span'>Support</span></Nav.Link>
                 <Nav.Link className='support' href='#'>Pricing</Nav.Link>
                 <Nav.Link className='support' href='#'>Guides</Nav.Link>
                 <Nav.Link className='support' href='#'>Training</Nav.Link>
                 <Nav.Link className='support' href='#'>Customer Service</Nav.Link>
+            </div>
                 <br/>
-                <Nav.Link className='members' href='#'>MEMBERS</Nav.Link>
+            <div className='inner'>
+                <Nav.Link className='members' href='#'><span className='footer-span'>Members</span></Nav.Link>
                 <Nav.Link className='members' href='#'>The DEV.FIT App</Nav.Link>
                 <Nav.Link className='members' href='#'>Store</Nav.Link>
                 <Nav.Link className='members' href='#'>FAQS</Nav.Link>
+            </div>
                 <br/>
             </Nav>
             <div className='middle'>
@@ -32,17 +37,22 @@ const Footer = () => {
                 <p>Develop Yourself, Develop Your Fit</p>
             </div>
             <Nav className='right'>
-                <Nav.Link className='legal' href='#'>LEGAL</Nav.Link>
+            <div className='inner'>
+                <Nav.Link className='legal' href='#'><span className='footer-span'>Legal</span></Nav.Link>
                 <Nav.Link className='legal' href='#'>Claim</Nav.Link>
                 <Nav.Link className='legal' href='#'>Privacy</Nav.Link>
                 <Nav.Link className='legal' href='#'>Terms</Nav.Link>
+            </div>
                 <br/>
-                <Nav.Link className='solutions' href='#'>SOLUTIONS</Nav.Link>
+            <div className='outer'>
+                <Nav.Link className='solutions' href='#'><span className='footer-span'>Solutions</span></Nav.Link>
                 <Nav.Link className='solutions' href='#'>Marketing</Nav.Link>
                 <Nav.Link className='solutions' href='#'>Analytics</Nav.Link>
                 <Nav.Link className='solutions' href='#'>Commerce</Nav.Link>
                 <Nav.Link className='solutions' href='#'>Insights</Nav.Link>
+            </div>
             </Nav>
+            </div>
             <div className='bottom'>
                 <hr/>
                 <p>© DEV.FIT, Inc. All rights reserved.</p>

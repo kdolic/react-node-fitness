@@ -3,9 +3,14 @@
   font-family: "Palanquin", sans-serif;
   background-color: #fff;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
   border: 1px solid red;
+}
+.footer-span {
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 .footer-navbar {
   border: 1px solid blue;
@@ -20,7 +25,15 @@
 }
 .left {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 25vw;
+  border: 1px solid green;
+}
+.right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   width: 25vw;
   border: 1px solid green;
 }
@@ -39,11 +52,45 @@
   font-weight: 700;
   text-decoration: none;
 }
+.inner {
+  display: flex;
+  width: 10vw;
+  flex-direction: column;
+  border: 1px solid red;
+}
+.outer {
+  width: 10vw;
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+}
 .middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   border: 1px solid yellow;
 }
-.right {
-  border: 1px solid black;
+.legal {
+  display: flex;
+  flex-direction: row;
+  color: #a9a9a9;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.solutions {
+  display: flex;
+  color: #a9a9a9;
+  padding: 1rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+.nav-row {
+  display: flex;
+  flex-direction: row;
 }
 .bottom {
   border: 1px solid hotpink;
