@@ -11,24 +11,23 @@ const Footer = () => {
                     <Nav.Link className='footer-nav' href="#">About</Nav.Link>
                     <Nav.Link className='footer-nav' href="#">Gallery</Nav.Link>
                     <Nav.Link className='footer-nav' href="#">Team</Nav.Link>
-                
-                <hr/>
+                {/* <hr/> */}
             </Nav>
             <div className='nav-row'>
-            <Nav className='left'> 
-            <div className='outer'>
-                <Nav.Link className='support' href='#'><span className='footer-span'>Support</span></Nav.Link>
-                <Nav.Link className='support' href='#'>Pricing</Nav.Link>
-                <Nav.Link className='support' href='#'>Guides</Nav.Link>
-                <Nav.Link className='support' href='#'>Training</Nav.Link>
-                <Nav.Link className='support' href='#'>Customer Service</Nav.Link>
+            <Nav className='nav-items'> 
+            <div className='inner'>
+                <Nav.Link className='nav-links' href='#'><span className='footer-span'>Support</span></Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Pricing</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Guides</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Training</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Customer Service</Nav.Link>
             </div>
                 <br/>
             <div className='inner'>
-                <Nav.Link className='members' href='#'><span className='footer-span'>Members</span></Nav.Link>
-                <Nav.Link className='members' href='#'>The DEV.FIT App</Nav.Link>
-                <Nav.Link className='members' href='#'>Store</Nav.Link>
-                <Nav.Link className='members' href='#'>FAQS</Nav.Link>
+                <Nav.Link className='nav-links' href='#'><span className='footer-span'>Members</span></Nav.Link>
+                <Nav.Link className='nav-links' href='#'>The DEV.FIT App</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Store</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>FAQS</Nav.Link>
             </div>
                 <br/>
             </Nav>
@@ -36,26 +35,26 @@ const Footer = () => {
                 <h1>LOGO</h1>
                 <p>Develop Yourself, Develop Your Fit</p>
             </div>
-            <Nav className='right'>
+            <Nav className='nav-items'>
             <div className='inner'>
-                <Nav.Link className='legal' href='#'><span className='footer-span'>Legal</span></Nav.Link>
-                <Nav.Link className='legal' href='#'>Claim</Nav.Link>
-                <Nav.Link className='legal' href='#'>Privacy</Nav.Link>
-                <Nav.Link className='legal' href='#'>Terms</Nav.Link>
+                <Nav.Link className='nav-links' href='#'><span className='footer-span'>Legal</span></Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Claim</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Privacy</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Terms</Nav.Link>
             </div>
                 <br/>
-            <div className='outer'>
-                <Nav.Link className='solutions' href='#'><span className='footer-span'>Solutions</span></Nav.Link>
-                <Nav.Link className='solutions' href='#'>Marketing</Nav.Link>
-                <Nav.Link className='solutions' href='#'>Analytics</Nav.Link>
-                <Nav.Link className='solutions' href='#'>Commerce</Nav.Link>
-                <Nav.Link className='solutions' href='#'>Insights</Nav.Link>
+            <div className='inner'>
+                <Nav.Link className='nav-links' href='#'><span className='footer-span'>Solutions</span></Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Marketing</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Analytics</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Commerce</Nav.Link>
+                <Nav.Link className='nav-links' href='#'>Insights</Nav.Link>
             </div>
             </Nav>
             </div>
             <div className='bottom'>
-                <hr/>
-                <p>© DEV.FIT, Inc. All rights reserved.</p>
+                {/* <hr/> */}
+                <p>© 2021 DEV.FIT, Inc. All rights reserved.</p>
                 <div className='social'>
                     <div className="icons8-facebook"></div>
                     <div className="icons8-twitter"></div>

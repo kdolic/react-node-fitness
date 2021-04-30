@@ -1,11 +1,11 @@
 import React from 'react'
-import Banner from './Banner'
-import './Home.css'
+import Footer from '../Footer'
 
 const Home = () => {
     return (
         <div className='home'>
-            {/* <h1>hello</h1> */}
+            <h1>HOME</h1>
+            <Footer/>
         </div>
     )
 }

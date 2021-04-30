@@ -5,7 +5,6 @@ import Home from "./components/home/Home";
 import Login from "./routes/login/Login";
 import Register from "./routes/register/Register";
 import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 
 function url(path) {
   return process.env.NODE_ENV === "development"
@@ -45,7 +44,6 @@ function App() {
         <Route path="/login" component={Login} />
         <Route path="/" component={Home} />
       </Switch>
-      <Footer />
     </Router>
   );
 }
