@@ -1,0 +1,58 @@
+.teamContainer {
+  font-family: "Palanquin", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  border: 1px solid red;
+}
+.team-top {
+  font-size: 2.8rem;
+  font-weight: 900;
+  padding: 4rem;
+  text-transform: uppercase;
+  border: 1px solid blue;
+}
+.team-top p {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding-top: 1.5rem;
+}
+.team-span {
+  border-bottom: 5px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+.gradient {
+  border-image-source: linear-gradient(to right, #fda1a1, #ff3b3f);
+}
+.team-content {
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
+  padding: 8rem 0rem;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 700;
+  border: 1px solid green;
+}
+.team-content p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #706e6e;
+}
+.team-btn {
+  width: 10vw;
+  margin-top: 4rem;
+  cursor: pointer;
+  background-color: #ff3b3f;
+  color: #efefef;
+  border: 1px solid;
+}
+.team-btn:hover {
+  background-color: #aa0003;
+  color: #fff;
+}
