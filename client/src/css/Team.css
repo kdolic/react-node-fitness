@@ -1,0 +1,38 @@
+.teamContainer {
+  font-family: "Palanquin", sans-serif;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  border: 1px solid red;
+}
+.team-top {
+  padding: 2rem;
+  text-transform: uppercase;
+
+  border: 1px solid blue;
+}
+.team-top h1 {
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+.team-top p {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.team-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid green;
+}
+.team-btn {
+  width: 10vw;
+  cursor: pointer;
+  background-color: #ff3b3f;
+  color: #efefef;
+  border: 1px solid;
+}
+.team-btn:hover {
+  background-color: #ff5f62;
+  color: #fff;
+}
