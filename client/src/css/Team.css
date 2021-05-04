@@ -1,38 +1,53 @@
 .teamContainer {
   font-family: "Palanquin", sans-serif;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100vw;
   border: 1px solid red;
 }
 .team-top {
-  padding: 2rem;
-  text-transform: uppercase;
-
-  border: 1px solid blue;
-}
-.team-top h1 {
   font-size: 2.8rem;
   font-weight: 900;
+  padding: 4rem;
+  text-transform: uppercase;
+  border: 1px solid blue;
 }
 .team-top p {
+  margin-top: 1rem;
+  text-align: center;
   font-size: 1.2rem;
   font-weight: 600;
+  padding-top: 1rem;
+}
+.team-span {
+  border-bottom: 5px solid #ff3b3f;
 }
 .team-content {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
+  width: 50vw;
+  padding: 8rem 0rem;
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: 700;
   border: 1px solid green;
+}
+.team-content p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #706e6e;
 }
 .team-btn {
   width: 10vw;
+  margin-top: 4rem;
   cursor: pointer;
   background-color: #ff3b3f;
   color: #efefef;
   border: 1px solid;
 }
 .team-btn:hover {
-  background-color: #ff5f62;
+  background-color: #aa0003;
   color: #fff;
 }

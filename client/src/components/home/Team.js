@@ -5,7 +5,7 @@ const Team = () => {
     return (
         <section className='teamContainer'>
             <div className='team-top'>
-                <h1>Meet <span>The</span> Team</h1>
+                <h1>Meet <span className='team-span'>The</span> Team</h1>
                 <p>The Creators of Dev.Fit</p>
             </div>
             <div className='team-content'>
