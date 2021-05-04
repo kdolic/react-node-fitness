@@ -18,10 +18,15 @@
   text-align: center;
   font-size: 1.2rem;
   font-weight: 600;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
 }
 .team-span {
-  border-bottom: 5px solid #ff3b3f;
+  border-bottom: 5px solid;
+  border-image-slice: 1;
+  border-width: 5px;
+}
+.gradient {
+  border-image-source: linear-gradient(to right, #fda1a1, #ff3b3f);
 }
 .team-content {
   display: flex;
