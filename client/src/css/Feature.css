@@ -4,14 +4,14 @@
   align-items: center;
   font-family: "Palanquin", sans-serif;
   background-color: #f6f6f6;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .title {
-  margin-top: 5rem;
+  margin-top: 6rem;
   font-size: 2.8rem;
   font-weight: 900;
   text-transform: uppercase;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .title-span {
   border-bottom: 5px solid;
@@ -24,16 +24,29 @@
 .features {
   display: flex;
   justify-content: center;
-  justify-content: space-evenly;
-  width: 80vw;
-  margin: 5rem;
-  border: 1px solid green;
+  justify-content: space-around;
+  width: 65vw;
+  margin: 7rem;
+  /* border: 1px solid green; */
 }
 .feature {
+  width: 15vw;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 900;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin: 1rem 0rem;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
+}
+.feature img {
+  margin-bottom: 2.5rem;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+.feature p {
+  margin-top: 1.5rem;
+  color: #a9a9a9;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-transform: none;
 }

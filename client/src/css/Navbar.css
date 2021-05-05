@@ -6,7 +6,6 @@
 .links {
   display: flex;
   font-weight: 900;
-  /* font-family: "Palanquin", sans-serif; */
   text-transform: uppercase;
   font-size: 1.2rem;
   justify-content: space-around;
@@ -18,7 +17,6 @@
   margin-left: 10vw;
   margin-right: 30vw;
   font-weight: 900;
-  /* font-family: "Palanquin", sans-serif; */
   text-decoration: none;
   font-size: 2.5rem;
   width: 10vw;
