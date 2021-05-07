@@ -1,6 +1,10 @@
 .navContainer {
   font-family: "Palanquin", sans-serif;
   background-color: #f6f6f6;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 1;
   /* border: 1px solid red; */
 }
 .links {
