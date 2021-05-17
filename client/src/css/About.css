@@ -3,13 +3,14 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  border: 1px solid green;
+  height: 110vh;
+  /* border: 1px solid green; */
 }
 .aboutTitle {
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .aboutTitle h1 {
   width: 20vw;
@@ -20,43 +21,66 @@
   text-align: center;
 }
 .aboutTitle p {
-  margin-top: 2rem;
+  margin: 3rem 0 1rem 0;
   width: 50vw;
   text-align: center;
 }
 .aboutContent {
-  width: 40vw;
-  margin: 1.5rem;
+  width: 45vw;
+  margin: 1.5rem 0 5rem 0;
   display: flex;
   justify-content: space-evenly;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
-
+.aboutContent img {
+  border-radius: 8px;
+}
 .aboutSection {
-  width: 20vw;
+  width: 30vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-left: 1.5rem;
+}
+.slogan {
+  color: #ff3b3f;
+  font-size: 0.9rem;
+  font-style: italic;
 }
 .aboutCards h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-transform: uppercase;
+  text-align: center;
   font-weight: 700;
-}
-.aboutCards {
+  color: #706e6e;
+  margin-bottom: 1rem;
 }
 .cardContainer {
+  width: 60vw;
   display: flex;
-  /* justify-content: space-between; */
-  border: 1px solid springgreen;
+  justify-content: space-around;
+  /* border: 1px solid springgreen; */
 }
 .card {
+  width: 25vw;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  color: #706e6e;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  /* border: 1px solid tomato; */
+}
+.card h3 {
+  display: flex;
+  justify-content: space-between;
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 700;
   color: #ff3b3f;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-evenly;
-  border: 1px solid tomato;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.card h3:hover {
+  cursor: pointer;
 }
