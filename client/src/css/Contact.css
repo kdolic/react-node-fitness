@@ -1,0 +1,12 @@
+.contactContainer {
+  width: 100vw;
+  height: 75vh;
+  background: linear-gradient(to right, #ff3b3f, #fda1a1);
+  border: 1px solid red;
+}
+.contactTitle {
+  border: 1px solid blue;
+}
+.contactForm {
+  border: 1px solid yellow;
+}

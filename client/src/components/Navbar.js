@@ -13,6 +13,7 @@ const Navbar = () => {
     <Nav.Link className="link" href="#">About</Nav.Link>
     <Nav.Link className="link" href="#">Gallery</Nav.Link>
     <Nav.Link className="link" href="#">Team</Nav.Link>
+    <Nav.Link className="link" href="#">Contact</Nav.Link>
     <div className='dropdown'>
       <NavDropdown  title={<span className="link dropdown-nav" >Account&#9662;</span>}>
       <div className='dropdown-content'>

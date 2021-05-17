@@ -11,6 +11,7 @@ const Footer = () => {
                     <Nav.Link className='footer-nav' href="#">About</Nav.Link>
                     <Nav.Link className='footer-nav' href="#">Gallery</Nav.Link>
                     <Nav.Link className='footer-nav' href="#">Team</Nav.Link>
+                    <Nav.Link className="footer-nav" href="#">Contact</Nav.Link>
             </Nav>
             <div className='nav-row'>
             <Nav className='nav-items'> 
