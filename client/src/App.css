@@ -90,6 +90,8 @@ video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
+  scroll-behavior: smooth;
+  font-family: "Palanquin", sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article,
@@ -127,14 +129,3 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-/* .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-} */

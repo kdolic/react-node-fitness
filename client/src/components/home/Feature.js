@@ -3,7 +3,7 @@ import '../../css/Feature.css';
 
 const Feature = () => {
     return (
-        <section className='featContainer'>
+        <section id='features' className='featContainer'>
             <div className='title'>
                 <h1>Fea<span className='title-span gradient'>tu</span>res</h1>
             </div>

@@ -4,7 +4,7 @@ import '../../css/Gallery.css';
 
 const Gallery = () => {
     return (
-        <section className='mainContainer'>
+        <section id='gallery' className='mainContainer'>
             <div className='gallery-top'>
                 <h1>Ga<span className='title-span gradient'>lle</span>ry</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed dapibus leonec.</p>

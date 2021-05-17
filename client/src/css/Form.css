@@ -20,13 +20,11 @@
 }
 .formTop h1 {
   font-size: 3rem;
-  font-family: "Palanquin", sans-serif;
   text-transform: uppercase;
   margin-bottom: 2.5rem;
 }
 .formTop h3 {
   font-size: 1.8rem;
-  font-family: "Palanquin", sans-serif;
   text-transform: uppercase;
   margin: 1rem 0 2.5rem 0;
 }
@@ -82,7 +80,6 @@ button:disabled {
   width: 40px;
 }
 .account {
-  font-family: "Palanquin", sans-serif;
   text-decoration: none;
   color: #a9a9a9;
 }
