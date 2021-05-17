@@ -3,7 +3,8 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  border: 1px solid green;
+  height: 125vh;
+  /* border: 1px solid green; */
 }
 .aboutTitle {
   display: flex;
@@ -20,16 +21,19 @@
   text-align: center;
 }
 .aboutTitle p {
-  margin: 2rem 0 0.8rem 0;
+  margin: 3rem 0 1rem 0;
   width: 50vw;
   text-align: center;
 }
 .aboutContent {
   width: 40vw;
-  margin: 1.5rem;
+  margin: 1.5rem 0 5rem 0;
   display: flex;
   justify-content: space-evenly;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+}
+.aboutContent img {
+  border-radius: 8px;
 }
 .aboutSection {
   width: 20vw;
@@ -42,10 +46,8 @@
   font-size: 0.9rem;
   font-style: italic;
 }
-.aboutCards {
-}
 .aboutCards h2 {
-  font-size: 2.2rem;
+  font-size: 2rem;
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
@@ -55,7 +57,7 @@
   width: 60vw;
   display: flex;
   justify-content: space-around;
-  border: 1px solid springgreen;
+  /* border: 1px solid springgreen; */
 }
 .card {
   width: 25vw;
@@ -67,13 +69,14 @@
   /* border: 1px solid tomato; */
 }
 .card h3 {
+  display: flex;
+  justify-content: space-between;
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 700;
   color: #ff3b3f;
   margin-bottom: 1rem;
-}
-.card img {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .card h3:hover {
   cursor: pointer;
