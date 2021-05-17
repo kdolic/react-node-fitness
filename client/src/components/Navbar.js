@@ -15,7 +15,7 @@ const Navbar = () => {
     <Nav.Link className="link" href="#team">Team</Nav.Link>
     <Nav.Link className="link" href="#contact">Contact</Nav.Link>
     <div className='dropdown'>
-      <NavDropdown  title={<span className="link dropdown-nav" >Account&#9662;</span>}>
+      <NavDropdown title={<span className="link dropdown-nav" >Account&#9662;</span>}>
       <div className='dropdown-content'>
         <NavDropdown.Item className="link" href='/register'>Register</NavDropdown.Item>
         <br/>
