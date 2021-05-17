@@ -7,11 +7,11 @@ const Footer = () => {
         <footer className='footer'>
             <Nav className='footer-navbar'>
                     <Nav.Link className='footer-nav' href="/">Home</Nav.Link>
-                    <Nav.Link className='footer-nav' href="#">Features</Nav.Link>
-                    <Nav.Link className='footer-nav' href="#">About</Nav.Link>
-                    <Nav.Link className='footer-nav' href="#">Gallery</Nav.Link>
-                    <Nav.Link className='footer-nav' href="#">Team</Nav.Link>
-                    <Nav.Link className="footer-nav" href="#">Contact</Nav.Link>
+                    <Nav.Link className='footer-nav' href="#features">Features</Nav.Link>
+                    <Nav.Link className='footer-nav' href="#about">About</Nav.Link>
+                    <Nav.Link className='footer-nav' href="#gallery">Gallery</Nav.Link>
+                    <Nav.Link className='footer-nav' href="#team">Team</Nav.Link>
+                    <Nav.Link className="footer-nav" href="#contact">Contact</Nav.Link>
             </Nav>
             <div className='nav-row'>
             <Nav className='nav-items'> 
