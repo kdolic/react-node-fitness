@@ -8,14 +8,15 @@
   background: linear-gradient(to left, #ff3b3f, #fda1a1);
   border: 1px solid red;
 }
-/* .innerContainer {
+.innerContainer {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
+  width: 65vw;
+  border: 1px solid black;
+}
 .contactTitle {
   margin-top: 6rem;
+  margin-bottom: 1rem;
   font-size: 2.7rem;
   font-weight: 900;
   color: azure;
@@ -23,13 +24,30 @@
   border: 1px solid blue;
 }
 .contactForm {
-  display: flex;
-  width: 50vw;
+  width: 35vw;
+  padding: 0.1rem;
+  font-size: 1rem;
+  color: azure;
   border: 1px solid yellow;
 }
+.contactForm h2 {
+  margin-bottom: 1rem;
+}
+/* .topForm {
+  display: flex;
+} */
 .contactInput {
+  width: 15vw;
   padding: 0.1rem;
   border: 1px solid green;
+}
+::placeholder {
+  font-size: 1rem;
+  padding-left: 0.3rem;
+}
+.bottomForm input {
+  padding: 0.1rem;
+  width: 30.5vw;
 }
 .contactButton {
   background-color: transparent;
@@ -47,15 +65,22 @@
   display: flex;
   flex-direction: column;
   color: azure;
-  width: 50vw;
+  width: 27vw;
   border: 1px solid black;
 }
 .contactInfo h2 {
   font-size: 1.4rem;
   margin-bottom: 2rem;
 }
+.contactInfo p {
+  margin-left: 0.5rem;
+}
 .contactIcon {
   display: flex;
   align-items: center;
   border: 1px solid dimgray;
+}
+.contactIcon h3 {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
 }
