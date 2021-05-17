@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 125vh;
+  height: 110vh;
   /* border: 1px solid green; */
 }
 .aboutTitle {
@@ -26,7 +26,7 @@
   text-align: center;
 }
 .aboutContent {
-  width: 40vw;
+  width: 45vw;
   margin: 1.5rem 0 5rem 0;
   display: flex;
   justify-content: space-evenly;
@@ -36,10 +36,11 @@
   border-radius: 8px;
 }
 .aboutSection {
-  width: 20vw;
+  width: 30vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  margin-left: 1.5rem;
 }
 .slogan {
   color: #ff3b3f;
@@ -51,6 +52,7 @@
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
+  color: #706e6e;
   margin-bottom: 1rem;
 }
 .cardContainer {
@@ -63,6 +65,7 @@
   width: 25vw;
   padding: 2rem;
   margin-bottom: 1rem;
+  color: #706e6e;
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;

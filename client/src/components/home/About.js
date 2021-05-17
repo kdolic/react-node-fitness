@@ -1,7 +1,7 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import '../../css/About.css';
-import aboutUs from '../../assets/images/aboutUs.jpg';
+import aboutUs from '../../assets/images/gym.jpg';
 
 const About = () => {
     return (
@@ -11,7 +11,7 @@ const About = () => {
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                 </div>
                 <div className='aboutContent'>
-                    <img src={aboutUs} alt="aboutImg" width='300rem'/>
+                    <img src={aboutUs} alt="aboutImg" width='450rem'/>
                     <div className='aboutSection'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -27,7 +27,7 @@ const About = () => {
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                             </Col>
                             <Col className='card'>
-                                <h3>Inquries <img src="https://img.icons8.com/ios-glyphs/30/fa314a/long-arrow-right.png" alt='right_arrow' /></h3>
+                                <h3>Customer Service / FAQS <img src="https://img.icons8.com/ios-glyphs/30/fa314a/long-arrow-right.png" alt='right_arrow' /></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                             </Col>
                         </Row>

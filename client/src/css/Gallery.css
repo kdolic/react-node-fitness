@@ -21,6 +21,7 @@
   text-transform: none;
 }
 .galleryContainer {
+  margin-bottom: 1rem;
   /* border: 1px solid green; */
 }
 .galleryContainer img {
