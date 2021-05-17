@@ -3,11 +3,11 @@ import '../../css/Contact.css';
 import LocationOnIcon from '@material-ui/icons/LocationOn';
 import PhoneIcon from '@material-ui/icons/Phone';
 import MailIcon from '@material-ui/icons/Mail';
-import Mail from '@material-ui/icons/Mail';
 
 const Contact = () => {
     return (
-        <section className='contactContainer gradient'>
+        <section className='contactContainer'>
+          <div className='innerContainer'>
             <div className='contactTitle'>
                 <h1><span>Get</span> In Touch</h1>
             </div>
@@ -31,21 +31,22 @@ const Contact = () => {
                 <h2>Contact Info</h2>
                 <h4>Feel free to contact regarding any issues, questions, and any other inquries.</h4>
                 <div className='contactIcon'>
-                    <LocationOnIcon />
+                    <LocationOnIcon style={{fill: "azure"}}/>
                     <h3>Location</h3>
                 </div>
                     <p>Chicago, IL</p>
                 <div className='contactIcon'>
-                    <PhoneIcon />
+                    <PhoneIcon style={{fill: "azure"}}/>
                     <h3>Phone</h3>
                 </div>
                     <p>+1 123 456 7890</p>
                 <div className='contactIcon'>
-                    <MailIcon />
+                    <MailIcon style={{fill: "azure"}}/>
                     <h3>Phone</h3>
                 </div>
                     <p>devfitsupport@company.com</p>
             </div>
+          </div>
         </section>
     )
 }
