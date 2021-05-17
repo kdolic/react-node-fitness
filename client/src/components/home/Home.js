@@ -11,8 +11,8 @@ const Home = () => {
     return (
         <div className='home'>
             {/* <Banner/> */}
-            <About/>
             <Feature/>
+            <About/>
             <Gallery/>
             <Team/>
             <Contact/>
