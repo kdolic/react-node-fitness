@@ -6,7 +6,7 @@ import MailIcon from '@material-ui/icons/Mail';
 
 const Contact = () => {
     return (
-        <section className='contactContainer'>
+        <section id='contact' className='contactContainer'>
           <div className='innerContainer'>
             <div className='contactTitle'>
                 <h1><span>Get</span> In Touch</h1>

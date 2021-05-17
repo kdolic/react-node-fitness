@@ -5,7 +5,7 @@ import DW from '../../assets/images/DW1.jpg';
 
 const Team = () => {
     return (
-        <section className='teamContainer'>
+        <section id='team' className='teamContainer'>
             <div className='team-top'>
                 <h1>Meet <span className='team-span gradient'>The</span> Team</h1>
                 <p>The Developers of Dev.Fit</p>
