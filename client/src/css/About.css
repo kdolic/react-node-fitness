@@ -9,7 +9,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid red;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 .aboutTitle h1 {
   width: 20vw;
@@ -20,7 +20,7 @@
   text-align: center;
 }
 .aboutTitle p {
-  margin-top: 2rem;
+  margin: 2rem 0 0.8rem 0;
   width: 50vw;
   text-align: center;
 }
@@ -31,32 +31,50 @@
   justify-content: space-evenly;
   border: 1px solid black;
 }
-
 .aboutSection {
   width: 20vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
 }
-.aboutCards h2 {
-  font-size: 2.2rem;
-  text-transform: uppercase;
-  font-weight: 700;
+.slogan {
+  color: #ff3b3f;
+  font-size: 0.9rem;
+  font-style: italic;
 }
 .aboutCards {
 }
+.aboutCards h2 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
 .cardContainer {
+  width: 60vw;
   display: flex;
-  /* justify-content: space-between; */
+  justify-content: space-around;
   border: 1px solid springgreen;
 }
 .card {
+  width: 25vw;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  /* border: 1px solid tomato; */
+}
+.card h3 {
   font-size: 1.5rem;
   text-transform: uppercase;
   font-weight: 700;
   color: #ff3b3f;
-  padding: 1rem;
-  display: flex;
-  justify-content: space-evenly;
-  border: 1px solid tomato;
+  margin-bottom: 1rem;
+}
+.card img {
+}
+.card h3:hover {
+  cursor: pointer;
 }
