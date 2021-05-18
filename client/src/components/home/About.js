@@ -33,7 +33,7 @@ const About = () => {
                         </Row>
                         <Row>
                             <Col className='card'>
-                                <h3>DEV.FIT Development <img src="https://img.icons8.com/ios-glyphs/30/fa314a/long-arrow-right.png" alt='right_arrow' /></h3>
+                                <h3>DEV.FIT Personal Development <img src="https://img.icons8.com/ios-glyphs/30/fa314a/long-arrow-right.png" alt='right_arrow' /></h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
                             </Col>
                             <Col className='card'>

@@ -15,13 +15,13 @@ const Contact = () => {
                 <div>
                     <h2>Please fill out the form below to send us an email and we will get back to you as soon as possible.</h2>
                     <form action="/contact">
-                        <div>
+                        <div className='topForm'>
                             <input className='contactInput' type='text' required id='fullName' name='fullName' placeholder='Name :' />
                             <input className='contactInput' required id='email' name='email' type='email' placeholder='Email :' />
                         </div>
-                        <div>
-                            <input className='contactInput' type='text' required id='subject' name='subject' placeholder='Subject :' />
-                            <textarea className='contactInput' name="message" cols="100" rows="6" type='text' placeholder='Message :'></textarea>
+                        <div className='bottomForm'>
+                            <input required id='subject' name='subject' placeholder='Subject :' />
+                            <textarea name="message" cols="50" rows="5" type='text' placeholder='Message :'></textarea>
                             <button className='contactButton' type='submit'>Send Message</button>
                         </div>
                     </form>
@@ -34,7 +34,7 @@ const Contact = () => {
                     <LocationOnIcon style={{fill: "azure"}}/>
                     <h3>Location</h3>
                 </div>
-                    <p>Chicago, IL</p>
+                    <p>Des Moines, IA</p>
                 <div className='contactIcon'>
                     <PhoneIcon style={{fill: "azure"}}/>
                     <h3>Phone</h3>
@@ -42,7 +42,7 @@ const Contact = () => {
                     <p>+1 123 456 7890</p>
                 <div className='contactIcon'>
                     <MailIcon style={{fill: "azure"}}/>
-                    <h3>Phone</h3>
+                    <h3>Email</h3>
                 </div>
                     <p>devfitsupport@company.com</p>
             </div>
