@@ -3,42 +3,41 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   width: 100vw;
-  height: 75vh;
+  height: 60vh;
   background: linear-gradient(to left, #ff3b3f, #fda1a1);
-  border: 1px solid red;
+  /* border: 1px solid red; */
 }
 .innerContainer {
   display: flex;
   flex-direction: column;
   width: 65vw;
-
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .contactTitle {
-  margin-top: 6rem;
   margin-bottom: 1rem;
+  margin-left: 0.8rem;
   font-size: 2.7rem;
   font-weight: 900;
   color: azure;
   text-transform: uppercase;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .contactTitle h2 {
   font-size: 1rem;
-  margin-top: 0.5rem;
+  font-weight: 500;
+  margin-top: 1rem;
   margin-bottom: 1rem;
   color: azure;
   text-transform: none;
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
 }
 .contactForm {
   width: 35vw;
   padding: 0.2em;
   font-size: 1rem;
   color: azure;
-  border: 1px solid yellow;
+  /* border: 1px solid yellow; */
 }
 .contactForm h2 {
   margin-bottom: 1rem;
@@ -50,7 +49,7 @@
 .contactInput {
   width: 15vw;
   padding: 0.2rem;
-  border: 1px solid green;
+  /* border: 1px solid green; */
 }
 ::placeholder {
   font-size: 1rem;
@@ -69,8 +68,8 @@
   /* border: 1px solid orange; */
 }
 .contactButton:hover {
-  background-color: azure;
-  color: #ff3b3f;
+  background-color: #ff3b3f;
+  color: azure;
   cursor: pointer;
   transition: 0.3s ease-in-out;
 }
@@ -84,27 +83,30 @@
   flex-direction: column;
   color: azure;
   width: 27vw;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 .contactInfo h2 {
   font-size: 1.4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
+}
+.contactInfo h4 {
+  margin-bottom: 1.5rem;
 }
 .contactInfo p {
-  margin-left: 0.5rem;
+  margin: 0.2rem 0 1.2rem 2.2rem;
 }
 .contactIcon {
   display: flex;
   align-items: center;
   width: 120px;
-  border: 1px solid dimgray;
+  /* border: 1px solid dimgray; */
+}
+.contactIcon h3 {
+  font-size: 1rem;
+  margin-left: 1rem;
 }
 .message_box {
   border-radius: 8px;
   width: 30.5vw;
-  margin-left: 0.5rem;
-}
-
-.contactIcon h3 {
-  font-size: 1rem;
+  margin-left: 0.6rem;
 }

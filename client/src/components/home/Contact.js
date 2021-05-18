@@ -40,13 +40,14 @@ const Contact = () => {
               </div>
               <div className="bottomForm">
                 <input
+                  className="contactInput"
                   required
                   id="subject"
                   name="subject"
                   placeholder="Subject :"
                 />
                 <textarea
-                  className="message_box"
+                  className="message_box contactInput"
                   name="message"
                   cols="50"
                   rows="5"
@@ -66,17 +67,17 @@ const Contact = () => {
               other inquries.
             </h4>
             <div className="contactIcon">
-              <LocationOnIcon style={{ fill: "azure", width: "15px" }} />
+              <LocationOnIcon style={{ fill: "azure", width: "18px" }} />
               <h3>Location</h3>
             </div>
             <p>Des Moines, IA</p>
             <div className="contactIcon">
-              <PhoneIcon style={{ fill: "azure", width: "15px" }} />
+              <PhoneIcon style={{ fill: "azure", width: "18px" }} />
               <h3>Phone</h3>
             </div>
             <p>+1 123 456 7890</p>
             <div className="contactIcon">
-              <MailIcon style={{ fill: "azure", width: "15px" }} />
+              <MailIcon style={{ fill: "azure", width: "18px" }} />
               <h3>Email</h3>
             </div>
             <p>devfitsupport@company.com</p>
