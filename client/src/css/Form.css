@@ -11,6 +11,7 @@
   background-size: cover;
   background-position: center;
   width: 60vw;
+  height: 100vh;
 }
 .formTop {
   display: flex;
@@ -61,6 +62,7 @@ button {
   color: white;
   border-radius: 8px;
   margin-bottom: 0.6rem;
+  margin-left: 0.5rem;
 }
 button:disabled {
   color: darkgray;
@@ -82,6 +84,7 @@ button:disabled {
 .account {
   text-decoration: none;
   color: #a9a9a9;
+  margin-left: 0.5rem;
 }
 .error {
   color: red;

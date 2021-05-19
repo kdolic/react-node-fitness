@@ -1,5 +1,6 @@
 import React from "react";
 import {Nav} from "react-bootstrap";
+import logo from '../assets/images/Logo.png';
 import "../css/Footer.css";
 
 const Footer = () => {
@@ -32,7 +33,7 @@ const Footer = () => {
                 <br/>
             </Nav>
             <div className='middle'>
-                <h1>LOGO</h1>
+            <img src={logo} alt='logo' className='logoFooter' />
                 <p>Develop Yourself, Develop Your Fit</p>
             </div>
             <Nav className='nav-items'>

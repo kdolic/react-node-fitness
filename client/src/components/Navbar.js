@@ -1,5 +1,6 @@
 import React from "react";
 import {Nav, NavDropdown} from "react-bootstrap";
+import logo from '../assets/images/Logo.png';
 import "../css/Navbar.css";
 
 const Navbar = () => {
@@ -7,7 +8,7 @@ const Navbar = () => {
   return (
 <section className='navContainer'>
   <Nav className="links">
-    <Nav.Link className='navTitle' href="/">Dev.Fit</Nav.Link>
+    <Nav.Link href="/"><img src={logo} alt='logo' className='navTitle' /></Nav.Link>
     <Nav.Link className="link" href="/">Home</Nav.Link>
     <Nav.Link className="link" href="#features">Features</Nav.Link>
     <Nav.Link className="link" href="#about">About</Nav.Link>
