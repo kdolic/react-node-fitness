@@ -10,7 +10,7 @@ import Footer from '../Footer';
 const Home = () => {
     return (
         <div className='home'>
-            {/* <Banner/> */}
+            <Banner/>
             <Feature/>
             <About/>
             <Gallery/>
