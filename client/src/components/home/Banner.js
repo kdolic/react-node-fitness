@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick-theme.css";
 import '../../css/Banner.css';
 import banner1 from "../../assets/images/fasting.jpg";
 import banner2 from "../../assets/images/nutrition.jpg";
-import banner3 from "../../assets/images/1banner.jpg";
+import banner3 from "../../assets/images/gym.jpg";
 
 const Banner = () => {
 
@@ -15,11 +15,11 @@ const Banner = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 5000
+    autoplaySpeed: 3000
   }
 
   return (
-    <Slider className='bannerContainer' {...settings}>
+    <Slider  className='bannerContainer' {...settings}>
       <div className='imgContainer'>
         <img src={banner1} alt='banner1' />
       </div>

@@ -1,9 +1,14 @@
 .bannerContainer {
   width: 100vw;
   display: flex;
-  align-items: center;
+  border: 1px solid blue;
 }
 .imgContainer img {
   width: 100vw;
-  height: 120vh;
+  height: 92vh;
+  margin-top: 2rem;
+  display: flex;
+  border-bottom: 1px solid transparent;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+    rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
 }
