@@ -19,7 +19,7 @@ const Banner = () => {
   }
 
   return (
-    <Slider  className='bannerContainer' {...settings}>
+    <Slider className='bannerContainer' {...settings}>
       <div className='imgContainer'>
         <img src={banner1} alt='banner1' />
       </div>

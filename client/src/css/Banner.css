@@ -1,7 +1,5 @@
 .bannerContainer {
   width: 100vw;
-  display: flex;
-  border: 1px solid blue;
 }
 .imgContainer img {
   width: 100vw;
