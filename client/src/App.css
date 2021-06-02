@@ -93,6 +93,9 @@ video {
   scroll-behavior: smooth;
   font-family: "Palanquin", sans-serif;
 }
+body {
+  overflow-x: hidden;
+}
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
