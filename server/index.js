@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3001;
 const server = require('./api/server');
 
 // Have Node serve the files for our built React app
-server.use(express.static(path.join(__dirname, '../client/dist')));
+server.use(express.static(path.join(__dirname, '../client/build')));
 
 server.get("/api", (req, res) => {
   res.json({ message: "*** react-node-fitness: API running ***" });
