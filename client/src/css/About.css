@@ -38,6 +38,7 @@
 .aboutSection {
   width: 30vw;
   display: flex;
+  line-height: normal;
   flex-direction: column;
   justify-content: space-around;
   margin-left: 1.5rem;
