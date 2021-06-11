@@ -1,9 +1,11 @@
 import React from "react";
+import Fade from 'react-reveal/Fade';
 import "../../css/Feature.css";
 
 const Feature = () => {
   return (
     <section id="features" className="featContainer">
+      <Fade left duration={2000}>
       <div className="title">
         <h1>
           Fea<span className="title-span gradient">tu</span>res
@@ -55,6 +57,7 @@ const Feature = () => {
           </p>
         </div>
       </div>
+      </Fade>
     </section>
   );
 };
