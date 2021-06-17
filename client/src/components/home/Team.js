@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from 'react-reveal/Fade';
 import "../../css/Team.css";
 import KD from "../../assets/images/KD1.jpg";
 import DW from "../../assets/images/DW1.jpg";
@@ -6,6 +7,7 @@ import DW from "../../assets/images/DW1.jpg";
 const Team = () => {
   return (
     <section id="team" className="teamContainer">
+      <Fade top duration={1500}>
       <div className="team-top">
         <h1>
           Meet <span className="team-span gradient">The</span> Team
@@ -33,6 +35,7 @@ const Team = () => {
           </a>
         </div>
       </div>
+      </Fade>
     </section>
   );
 };

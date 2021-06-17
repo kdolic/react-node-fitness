@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from "react-bootstrap";
 import "../../css/About.css";
 import aboutUs from "../../assets/images/1banner.jpg";
@@ -6,6 +7,7 @@ import aboutUs from "../../assets/images/1banner.jpg";
 const About = () => {
   return (
     <section id="about" className="aboutContainer">
+      <Fade top duration={1500}>
       <div className="aboutTitle">
         <h1>
           Abou<span className="title-span gradient">t D</span>ev.Fit
@@ -99,6 +101,7 @@ const About = () => {
           </Row>
         </Container>
       </div>
+      </Fade>
     </section>
   );
 };
