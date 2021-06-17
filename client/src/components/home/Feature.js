@@ -5,7 +5,7 @@ import "../../css/Feature.css";
 const Feature = () => {
   return (
     <section id="features" className="featContainer">
-      <Fade left duration={2000}>
+      <Fade top duration={1500}>
       <div className="title">
         <h1>
           Fea<span className="title-span gradient">tu</span>res
