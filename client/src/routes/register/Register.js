@@ -8,6 +8,7 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import * as yup from "yup";
 import formSchema from "../../validation/formSchema";
+import logo from '../../assets/images/Logo.png';
 import "../../css/Form.css";
 
 const initialRegisterValues = {
@@ -69,7 +70,7 @@ const Register = () => {
       <div className='formImg' />
       <form className="userForm" onSubmit={handleSubmit}>
         <div className="formTop">
-          <h1>DevFit</h1>
+          <img src={logo} alt="logo" width='220px' />
           {isValid ? (
             <img
               className="lockImg"
