@@ -4,14 +4,12 @@
   align-items: center;
   width: 100vw;
   background-color: #f6f6f6;
-  /* border: 1px solid red; */
 }
 .title {
   margin-top: 6rem;
   font-size: 2.8rem;
   font-weight: 900;
   text-transform: uppercase;
-  /* border: 1px solid blue; */
 }
 .title-span {
   border-bottom: 5px solid;
@@ -27,16 +25,13 @@
   justify-content: space-around;
   width: 65vw;
   margin: 7rem;
-  /* border: 1px solid green; */
 }
 .feature {
   width: 15vw;
   text-align: center;
   font-size: 1.5rem;
   font-weight: 900;
-  /* text-transform: uppercase; */
   margin: 1rem 0rem;
-  /* border: 1px solid yellow; */
 }
 .feature img {
   margin-bottom: 2.5rem;
@@ -50,4 +45,42 @@
   font-weight: 500;
   text-transform: none;
   line-height: initial;
+}
+
+/**********************       TABLET VIEW     *************************/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .title {
+    font-size: 3.2rem;
+  }
+  .features {
+    width: 85vw;
+  }
+  .feature {
+    width: 30vw;
+  }
+}
+
+/**********************       MOBILE VIEW     *************************/
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .title {
+    font-size: 2.1rem;
+  }
+  .features {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+  .feature {
+    width: 65vw;
+  }
+  .feature img {
+    width: 17vw;
+  }
+  .feature p {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
 }
