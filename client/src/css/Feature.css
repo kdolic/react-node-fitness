@@ -50,7 +50,7 @@
 /**********************       TABLET VIEW     *************************/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .title {
-    font-size: 3.2rem;
+    font-size: 2.6rem;
   }
   .features {
     width: 85vw;

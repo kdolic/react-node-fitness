@@ -4,7 +4,6 @@
   align-items: center;
   width: 100vw;
   height: 110vh;
-  /* border: 1px solid green; */
 }
 .aboutTitle {
   display: flex;
@@ -30,7 +29,6 @@
   margin: 1.5rem 0 5rem 0;
   display: flex;
   justify-content: space-evenly;
-  /* border: 1px solid black; */
 }
 .aboutContent img {
   border-radius: 8px;
@@ -60,7 +58,6 @@
   width: 60vw;
   display: flex;
   justify-content: space-around;
-  /* border: 1px solid springgreen; */
 }
 .card {
   width: 25vw;
@@ -70,7 +67,6 @@
   border-radius: 8px;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
     rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-  /* border: 1px solid tomato; */
 }
 .card h3 {
   display: flex;
@@ -84,4 +80,96 @@
 }
 .card h3:hover {
   cursor: pointer;
+}
+
+/**********************       TABLET VIEW     *************************/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .aboutContainer {
+    margin-bottom: 15rem;
+  }
+  .aboutTitle {
+    margin-bottom: 1.5rem;
+  }
+  .aboutTitle h1 {
+    width: 100vw;
+    font-size: 2.6rem;
+  }
+  .aboutContent img {
+    height: 25vh;
+  }
+  .aboutContent p {
+    width: 35vw;
+  }
+  .aboutCards h2 {
+    font-size: 1.7rem;
+  }
+  .cardContainer {
+    width: 80vw;
+  }
+  .card {
+    margin: 1rem;
+    height: 15vh;
+    width: 30vw;
+  }
+  .card h3 {
+    font-size: 1rem;
+  }
+  .card p {
+    font-size: 1rem;
+  }
+}
+
+/**********************       MOBILE VIEW     *************************/
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .aboutContainer {
+    margin-bottom: 70rem;
+  }
+  .aboutTitle {
+    margin-bottom: 1.5rem;
+  }
+  .aboutTitle h1 {
+    width: 100vw;
+    font-size: 2.1rem;
+  }
+  .aboutSection {
+    width: 80vw;
+    display: flex;
+    line-height: normal;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+
+  .aboutContent {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutContent img {
+    width: 80vw;
+    margin-bottom: 1.5rem;
+  }
+
+  .aboutCards h2 {
+    font-size: 1.4rem;
+    margin-bottom: 7rem;
+  }
+  .cardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80vw;
+  }
+  .card {
+    margin: 1rem;
+    height: 18vh;
+    width: 70vw;
+  }
+  .card h3 {
+    font-size: 1rem;
+  }
+  .card p {
+    font-size: 1rem;
+  }
 }
