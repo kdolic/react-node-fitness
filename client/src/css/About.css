@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   width: 100vw;
-  height: 110vh;
+  margin-bottom: 6rem;
 }
 .aboutTitle {
   display: flex;
@@ -32,6 +32,8 @@
 }
 .aboutContent img {
   border-radius: 8px;
+  width: 27vw;
+  height: 43vh;
 }
 .aboutSection {
   width: 30vw;
@@ -54,13 +56,15 @@
   color: #706e6e;
   margin-bottom: 1rem;
 }
-.cardContainer {
+.cardContainer.container {
   width: 60vw;
+  height: 45vh;
   display: flex;
   justify-content: space-around;
 }
 .card {
   width: 25vw;
+  height: 15vh;
   padding: 2rem;
   margin-bottom: 1rem;
   color: #706e6e;
@@ -85,7 +89,7 @@
 /**********************       TABLET VIEW     *************************/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .aboutContainer {
-    margin-bottom: 15rem;
+    margin-bottom: 4rem;
   }
   .aboutTitle {
     margin-bottom: 1.5rem;
@@ -95,21 +99,23 @@
     font-size: 2.6rem;
   }
   .aboutContent img {
+    width: 40vw;
     height: 25vh;
   }
   .aboutContent p {
-    width: 35vw;
+    width: 25vw;
   }
   .aboutCards h2 {
     font-size: 1.7rem;
   }
-  .cardContainer {
+  .cardContainer.container {
+    height: 60vh;
     width: 80vw;
   }
   .card {
     margin: 1rem;
-    height: 15vh;
-    width: 30vw;
+    height: 22vh;
+    width: 22vw;
   }
   .card h3 {
     font-size: 1rem;
@@ -122,7 +128,7 @@
 /**********************       MOBILE VIEW     *************************/
 @media only screen and (min-width: 375px) and (max-width: 767px) {
   .aboutContainer {
-    margin-bottom: 70rem;
+    margin-bottom: 8rem;
   }
   .aboutTitle {
     margin-bottom: 1.5rem;
@@ -138,7 +144,6 @@
     flex-direction: column;
     font-size: 1rem;
   }
-
   .aboutContent {
     width: 100vw;
     display: flex;
@@ -150,7 +155,6 @@
     width: 80vw;
     margin-bottom: 1.5rem;
   }
-
   .aboutCards h2 {
     font-size: 1.4rem;
     margin-bottom: 7rem;
@@ -160,6 +164,9 @@
     flex-direction: column;
     align-items: center;
     width: 80vw;
+  }
+  .cardContainer.container {
+    height: 100vh;
   }
   .card {
     margin: 1rem;
