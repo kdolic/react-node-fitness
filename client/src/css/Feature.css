@@ -53,10 +53,14 @@
     font-size: 2.6rem;
   }
   .features {
-    width: 85vw;
+    width: 60vw;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem;
   }
   .feature {
-    width: 30vw;
+    width: 25vw;
+    margin-top: 2rem;
   }
 }
 
