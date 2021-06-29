@@ -8,11 +8,11 @@ const Navbar = () => {
   return (
 <section className='navContainer'>
   <Nav className="links">
-    <Nav.Link href="/"><img src={logo} alt='logo' className='navTitle' /></Nav.Link>
-    <Nav.Link className="link" href="/">Home</Nav.Link>
+    {/* <Nav.Link href="/"><img src={logo} alt='logo' className='navTitle' /></Nav.Link> */}
     <Nav.Link className="link" href="#features">Features</Nav.Link>
     <Nav.Link className="link" href="#about">About</Nav.Link>
     <Nav.Link className="link" href="#gallery">Gallery</Nav.Link>
+    <Nav.Link href="/"><img src={logo} alt='logo' className='navTitle' /></Nav.Link>
     <Nav.Link className="link" href="#team">Team</Nav.Link>
     <Nav.Link className="link" href="#contact">Contact</Nav.Link>
     <div className='dropdown'>
