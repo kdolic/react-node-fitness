@@ -6,13 +6,11 @@
   width: 100vw;
   height: 60vh;
   background: linear-gradient(to left, #ff3b3f, #fda1a1);
-  /* border: 1px solid red; */
 }
 .innerContainer {
   display: flex;
   flex-direction: column;
   width: 65vw;
-  /* border: 1px solid black; */
 }
 .contactTitle {
   margin-bottom: 1rem;
@@ -21,7 +19,6 @@
   font-weight: 900;
   color: azure;
   text-transform: uppercase;
-  /* border: 1px solid blue; */
 }
 .contactTitle h2 {
   font-size: 1rem;
@@ -30,14 +27,12 @@
   margin-bottom: 1rem;
   color: azure;
   text-transform: none;
-  /* border: 1px solid blue; */
 }
 .contactForm {
   width: 35vw;
   padding: 0.2em;
   font-size: 1rem;
   color: azure;
-  /* border: 1px solid yellow; */
 }
 .contactForm h2 {
   margin-bottom: 1rem;
@@ -49,7 +44,6 @@
 .contactInput {
   width: 14.7vw;
   padding: 0.2rem;
-  /* border: 1px solid green; */
 }
 ::placeholder {
   font-size: 1rem;
@@ -65,7 +59,6 @@
   margin-top: 1.5rem;
   border: 2px solid azure;
   width: 10vw;
-  /* border: 1px solid orange; */
 }
 .contactButton:hover {
   background-color: #ff3b3f;
@@ -83,7 +76,6 @@
   flex-direction: column;
   color: azure;
   width: 27vw;
-  /* border: 1px solid black; */
 }
 .contactInfo h2 {
   font-size: 1.4rem;
@@ -99,7 +91,6 @@
   display: flex;
   align-items: center;
   width: 120px;
-  /* border: 1px solid dimgray; */
 }
 .contactIcon h3 {
   font-size: 1rem;
@@ -107,7 +98,95 @@
 }
 .message_box {
   font-size: 1rem;
-  border-radius: 8px;
+  border-radius: 6px;
   width: 30.5vw;
   margin-left: 0.6rem;
+}
+
+/**********************       TABLET VIEW     *************************/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .contactContainer {
+    width: 100vw;
+    height: 95vh;
+  }
+  .contactTitle {
+    margin-top: 7rem;
+  }
+  .formAndContact {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .contactForm input {
+    width: 70vw;
+  }
+  .contactForm textarea {
+    width: 70vw;
+  }
+  .topForm {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactButton {
+    width: 30vw;
+    margin-bottom: 1.5rem;
+  }
+  .contactInfo {
+    width: 50vw;
+  }
+  .contactInfo h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+}
+
+/**********************       MOBILE VIEW     *************************/
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .contactContainer {
+    width: 100vw;
+    height: 115vh;
+    font-size: 0.8rem;
+    display: flex;
+  }
+  .innerContainer {
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .formAndContact {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+  }
+  .contactForm input {
+    width: 80vw;
+  }
+  .contactForm textarea {
+    width: 80vw;
+  }
+  .topForm {
+    display: flex;
+    flex-direction: column;
+  }
+  .contactTitle {
+    width: 80vw;
+    font-size: 2.1rem;
+    text-align: center;
+  }
+  .contactTitle h2 {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  .contactButton {
+    width: 50vw;
+    margin-bottom: 1.5rem;
+  }
+  .contactInfo {
+    width: 80vw;
+  }
+  .contactInfo h2 {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 0.8rem;
+  }
 }
