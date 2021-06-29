@@ -10,20 +10,22 @@
 }
 .links {
   display: flex;
+  justify-content: center;
   font-weight: 900;
   text-transform: uppercase;
   font-size: 1.1rem;
-  margin-left: 10rem;
+  margin-left: 12rem;
   align-items: center;
   width: 80vw;
   height: 6vh;
   /* border: 1px solid blue; */
 }
 .navTitle {
-  width: 200px;
-  margin-left: 2rem;
-  margin-right: 20rem;
+  width: 220px;
   /* border: 1px solid orange; */
+}
+.links img {
+  margin: 1rem;
 }
 .link {
   display: flex;
