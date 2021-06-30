@@ -37,7 +37,8 @@
   margin-top: 5rem;
 }
 input {
-  width: 36vw;
+  width: 37.5vw;
+  height: 1.5vh;
   padding: 0.6rem 0.5rem;
   margin: 0.8rem 0 0.8rem 0.5rem;
   font-size: 1.1rem;
@@ -53,7 +54,7 @@ input {
   justify-content: space-between;
 }
 button {
-  width: 37.5vw;
+  width: 38.5vw;
   background-color: lightgreen;
   font-weight: 900;
   font-size: 1rem;
@@ -93,7 +94,26 @@ button:disabled {
 }
 
 /**********************       TABLET VIEW     *************************/
-@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .userForm {
+    margin-left: 2rem;
+  }
+  .formButton button {
+    width: 40vw;
+  }
+  .formImg {
+    width: 50vw;
+  }
+  .accountLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1rem;
+  }
+  .account {
+    margin-bottom: 1rem;
+  }
+}
 
 /**********************       MOBILE VIEW     *************************/
 @media only screen and (min-width: 375px) and (max-width: 767px) {

@@ -58,13 +58,6 @@ const Register = () => {
     register.last_name === "" ||
     register.email === "";
 
-  //   const isCorrect =
-  //     register.username === register.username ||
-  //     register.password === register.password ||
-  //     register.first_name === register.first_name ||
-  //     register.last_name === register.last_name ||
-  //     register.email === register.email;
-
   return (
     <section className="container">
       <div className='formImg' />
