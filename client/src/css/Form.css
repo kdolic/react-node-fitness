@@ -91,3 +91,41 @@ button:disabled {
   font-weight: 900;
   margin-left: 1vw;
 }
+
+/**********************       TABLET VIEW     *************************/
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+
+/**********************       MOBILE VIEW     *************************/
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .userForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .formImg {
+    display: none;
+  }
+  input {
+    width: 80vw;
+  }
+  .formButton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .accountLogin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .account {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+}
