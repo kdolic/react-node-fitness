@@ -12,7 +12,32 @@
     rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(190, 63, 63, 0.12) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
-
+.imgContainer {
+  position: relative;
+}
+.overlay {
+  position: absolute;
+  opacity: 1;
+  top: 5vh;
+  bottom: 0;
+  left: 90vw;
+  right: 0;
+}
+.overlay img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+.imgDescription {
+  position: absolute;
+  top: 0;
+  bottom: 2;
+  left: 0;
+  right: 60;
+  width: 60vw;
+  height: 60vh;
+  z-index: 1;
+}
 /**********************       TABLET VIEW     *************************/
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .imgContainer img {
