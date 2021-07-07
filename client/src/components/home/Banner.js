@@ -4,8 +4,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import '../../css/Banner.css';
 import banner3 from "../../assets/images/fasting.jpg";
-import banner2 from "../../assets/images/nutrition.jpg";
-import banner1 from "../../assets/images/gym.jpg";
+import banner2 from "../../assets/images/goals.jpg";
+import banner1 from "../../assets/images/fitness1.jpg";
 
 const Banner = () => {
 
