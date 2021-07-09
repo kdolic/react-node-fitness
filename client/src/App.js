@@ -4,7 +4,7 @@ import "./App.css";
 import Home from "./components/home/Home";
 import Login from "./routes/login/Login";
 import Register from "./routes/register/Register";
-import Navbar from "./components/Navbar";
+import Dashboard from "./routes/dashboard/Dashboard";
 
 function url(path) {
   return process.env.NODE_ENV === "development"
@@ -38,8 +38,8 @@ function App() {
     //   </header>
     // </div>
     <Router>
-      <Navbar />
       <Switch>
+        <Route path="/dashboard" component={Dashboard} />
         <Route path="/register" component={Register} />
         <Route path="/login" component={Login} />
         <Route path="/" component={Home} />
