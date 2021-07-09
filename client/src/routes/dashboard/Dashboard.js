@@ -1,11 +1,13 @@
-import React from 'react'
+import React from 'react';
+import DashNav from '../../components/dashboard/DashNav';
+import '../../css/Dashboard/Dashboard.css';
 
-const Home = () => {
+const Dashboard = () => {
     return (
-        <div>
-            
+        <div className='dashContainer'>
+            <DashNav />
         </div>
     )
 }
 
-export default Home
+export default Dashboard

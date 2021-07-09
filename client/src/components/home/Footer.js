@@ -1,7 +1,7 @@
 import React from "react";
 import {Nav} from "react-bootstrap";
-import logo from '../assets/images/Logo.png';
-import "../css/Footer.css";
+import logo from '../../assets/images/Logo.png';
+import '../../css/Footer.css';
 
 const Footer = () => {
     return (

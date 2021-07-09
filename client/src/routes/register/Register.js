@@ -10,6 +10,7 @@ import * as yup from "yup";
 import formSchema from "../../validation/formSchema";
 import logo from '../../assets/images/Logo.png';
 import "../../css/Form.css";
+import Navbar from "../../components/Navbar";
 
 const initialRegisterValues = {
   username: "",
@@ -60,6 +61,7 @@ const Register = () => {
 
   return (
     <section className="container">
+      <Navbar />
       <div className='formImg' />
       <form className="userForm" onSubmit={handleSubmit}>
         <div className="formTop">
