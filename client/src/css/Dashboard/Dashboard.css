@@ -1,5 +1,15 @@
 .dashContainer {
+  height: 100vh;
   display: flex;
   justify-content: center;
+  align-items: center;
   border: 1px solid red;
+}
+.innerDash {
+  border: 1px solid blueviolet;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-end;
+  width: 90vw;
+  height: 90vh;
 }
