@@ -9,16 +9,16 @@ const DashNav = () => {
                 <div className='navIcons'>
                     <div className='icon'>
                         <div className='icons8-profile'></div>
+                        <p>Profile</p>
                     </div>
-                    <p>Profile</p>
                     <div className='icon'>
                         <div className='icons8-not'></div>
+                        <p>Notifications</p>
                     </div>
-                    <p>Notifications</p>
                     <div className='icon'>
                         <div className='icons8-logout'></div>
+                        <p>Logout</p>
                     </div>
-                    <p>Logout</p>
                 </div>
             </div>
             
