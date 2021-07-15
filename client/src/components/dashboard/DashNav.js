@@ -16,8 +16,10 @@ const DashNav = () => {
                         <p>Notifications</p>
                     </div>
                     <div className='icon'>
-                        <div className='icons8-logout'></div>
-                        <p>Logout</p>
+                        <a href='/'>
+                            <div className='icons8-logout'></div>
+                            <p>Logout</p>
+                        </a>
                     </div>
                 </div>
             </div>

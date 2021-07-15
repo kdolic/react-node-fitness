@@ -12,7 +12,7 @@ import {RiLogoutCircleRFill} from 'react-icons/ri';
 
 const DashMenu = () => {
     return (
-        <ProSidebar width='200px' collapsedWidth='50px'>
+        <ProSidebar width='250px' collapsedWidth='100px'>
             <SidebarHeader>
                 <a href="/"><img src={logo} alt='logo' className='navTitle' /></a>
                 <p>X</p>
@@ -32,7 +32,7 @@ const DashMenu = () => {
                 </Menu>
             </SidebarContent>
             <SidebarFooter>
-                <MenuItem icon={<RiLogoutCircleRFill />}>Logout</MenuItem>
+                <a href='/'><MenuItem icon={<RiLogoutCircleRFill />}> Logout</MenuItem></a>
                 <p>© 2021 DEV.FIT, Inc. All rights reserved.</p>
             </SidebarFooter>
         </ProSidebar>
