@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from 'react';
+import axios from 'axios';
 
 const DashQuote = () => {
     const [quotes, setQuotes] = useState('');
 
     const getQuote = () => {
-        fetch('https://type.fit/api/quotes')
-        .then((res) => res.json())
-        .then((data) => {
-            let randomNum = Math.floor(Math.random() * data.length);
-            setQuotes(data[randomNum]);
+        axios.get('https://type.fit/api/quotes')
+        .then((res) => {
+            let randomNum = Math.floor(Math.random() * res.data.length);
+            setQuotes(res.data[randomNum]);
         })
     }
 
