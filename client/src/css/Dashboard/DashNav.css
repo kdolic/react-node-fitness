@@ -1,9 +1,8 @@
 .dashNav {
-  width: 60vw;
+  width: 80vw;
   height: 10vh;
   display: flex;
   justify-content: flex-end;
-  border: 1px solid brown;
 }
 .contentContainer {
   width: 50vw;
@@ -11,13 +10,16 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid green;
+  text-align: center;
+  border: 1px solid blue;
+}
+.navHead {
+  margin-left: 10rem;
 }
 .navIcons {
   width: 30vw;
   display: flex;
   justify-content: space-evenly;
-  border: 1px solid black;
 }
 .icon {
   width: 15vw;
@@ -25,7 +27,6 @@
   flex-direction: column;
   align-items: center;
   cursor: pointer;
-  border: 1px solid blue;
 }
 
 .icons8-profile {

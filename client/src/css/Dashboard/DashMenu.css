@@ -1,0 +1,10 @@
+.sidebarContainer {
+  width: 20vw;
+  display: flex;
+  overflow-y: hidden;
+}
+.sideFooter {
+  height: 5vh;
+  display: flex;
+  justify-content: center;
+}

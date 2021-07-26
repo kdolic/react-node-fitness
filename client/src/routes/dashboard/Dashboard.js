@@ -10,9 +10,11 @@ const Dashboard = () => {
     return (
         <div className='dashContainer'>
             <div className='innerDash'>
-                {/* <DashNav />
-                <DashQuote /> */}
                 <DashMenu />
+                <div className='navQuotes'>
+                    <DashNav />
+                    <DashQuote /> 
+                </div>
                 {/* <DashCalendar /> */}
                 {/* <DashAddExercise /> */}
             </div>
