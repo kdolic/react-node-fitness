@@ -1,5 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+import Slide from 'react-reveal/Slide';
+import '../../css/Dashboard/DashQuote.css';
 
 const DashQuote = () => {
     const [quotes, setQuotes] = useState('');
@@ -17,10 +19,14 @@ const DashQuote = () => {
     }, [])
 
     return (
+        <Slide left>
         <div className='quoteContainer'>
-            <p>{quotes.text}</p>
-            <p> - {quotes.author}</p>
-        </div>
+            <div className="quoteFlex">
+                <p>{quotes.text}</p>
+                <p> - {quotes.author}</p>
+            </div>
+           </div>
+        </Slide>
     )
 }
 

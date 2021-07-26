@@ -5,7 +5,7 @@ const DashNav = () => {
     return (
         <div className='dashNav'>
             <div className='contentContainer'>
-                <p>Welcome, [USER]</p>
+                <p className='navHead'>Welcome, [USER]</p>
                 <div className='navIcons'>
                     <div className='icon'>
                         <div className='icons8-profile'></div>

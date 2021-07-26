@@ -7,19 +7,20 @@ import {IoIosFitness, IoIosTrophy} from 'react-icons/io';
 import {IoFitness} from 'react-icons/io5';
 import {BsFillGearFill, BsArrowBarRight, BsArrowBarLeft} from 'react-icons/bs';
 import {FiTarget} from 'react-icons/fi';
-
-
+import '../../css/Dashboard/DashMenu.css';
 
 const DashMenu = () => {
-    const [toggled, setToggled] = useState(null);
     const [opened, setOpened] = useState(false);
+
+    const handleToggle = () => setOpened(!opened)
+
 
     return (
         <div className='sidebarContainer'>
-            <ProSidebar width='300px' collapsed='true' collapsedWidth='80px' toggled='true'>
-                <SidebarHeader>
+            <ProSidebar className='sidebarCollapse' breakPoint="xs" rtl="false" >
+                <SidebarHeader >
                     {/* <a href="/"><img src={logo} alt='logo' className='navTitle' /></a> */}
-                    {!opened ? <BsArrowBarRight /> : <BsArrowBarLeft />}
+                    {!opened ? <BsArrowBarRight onClick={handleToggle}/> : <BsArrowBarLeft onClick={handleToggle}/>}
                 </SidebarHeader>
                 <SidebarContent>
                     <Menu iconShape='round'>
@@ -34,8 +35,8 @@ const DashMenu = () => {
                         <MenuItem icon={<FaShoppingBag />}>Shop</MenuItem>
                     </Menu>
                 </SidebarContent>
-                <SidebarFooter>
-                    <a href='/'><MenuItem icon={<FaPowerOff />}></MenuItem></a>
+                <SidebarFooter className='sideFooter'>
+                    <MenuItem icon={<FaPowerOff />}></MenuItem>
                 </SidebarFooter>
             </ProSidebar>
         </div>
