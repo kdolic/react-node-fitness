@@ -8,18 +8,28 @@
 
 ### Images: (Coming Soon)
 
-### Technologies: 
-<img align="left" alt="Visual Studio Code" width="26px" height="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" />
-<img align="left" alt="React" width="26px" height="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/react/react.png" />
-<img align="left" alt="Node.js" width="26px" height="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/nodejs/nodejs.png" />
-<img align="left" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="26px" height="30px" />
-<img align="left" src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="26px" height="30px" />
-<img align="left" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="26px" height="30px" />
-<img align="left" alt="Git" width="26px" height="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/git/git.png" />
-<img align="left" alt="GitHub" width="26px" height="30px" src="https://raw.githubusercontent.com/github/explore/78df643247d429f6cc873026c0622819ad797942/topics/github/github.png" />
-<img align="left" alt="Terminal" width="26px" height="30px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/terminal/terminal.png" />
-<img align="left" src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="26px" height="30px" />
-<img align="left" src="https://cdn.worldvectorlogo.com/logos/adobe-xd.svg" alt="xd" width="26px" height="30px" />
+### Languages and Tools:
+
+#### Front-End:
+
+![React](https://img.shields.io/badge/React-2E3440?style=for-the-badge&logo=react)
+
+#### Back-End:
+
+![Node](https://img.shields.io/badge/Node-2E3440?style=for-the-badge&logo=node.js)
+![Express](https://img.shields.io/badge/Express-2E3440?style=for-the-badge&logo=express)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-2E3440?style=for-the-badge&logo=postgresql)
+
+#### Tools:
+
+![git](https://img.shields.io/badge/git-2E3440?style=for-the-badge&logo=git)
+![Github](https://img.shields.io/badge/GitHub-2E3440?style=for-the-badge&logo=github)
+![npm](https://img.shields.io/badge/npm-2E3440?style=for-the-badge&logo=npm)
+![VS Code](https://img.shields.io/badge/VS%20Code-2E3440?style=for-the-badge&logo=visual%20studio)
+![Postman](https://img.shields.io/badge/Postman-2E3440?style=for-the-badge&logo=Postman)
+![Heroku](https://img.shields.io/badge/Heroku-2E3440?style=for-the-badge&logo=heroku)
+![Adobe XD](https://img.shields.io/badge/Adobe%20XD-2E3440?style=for-the-badge&logo=adobe%20xd)
+
 <br />
 
 ### Problems faced: (Coming Soon)
